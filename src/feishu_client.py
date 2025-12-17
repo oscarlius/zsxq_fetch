@@ -73,11 +73,9 @@ class FeishuClient:
         # 用户代码中：
         # upload_file_to_drive -> explorer (Drive)
         # upload_media_to_drive -> bitable_file (Attachment)
-        # 我们要存到多维表格附件，所以应该用 bitable_file 或者 bitable_image
-        # 对于图片，parent_type="bitable_image"
-        # 对于文件，parent_type="bitable_file"
+        # 经过测试，存入附件字段建议统一使用 bitable_file，避免 400 错误
+        real_parent_type = "bitable_file"
         
-        real_parent_type = "bitable_image" if file_type == "image" else "bitable_file"
         # 父节点对于 bitable 上传，需要是 app_token
         parent_node = self.app_token 
         

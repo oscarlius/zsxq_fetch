@@ -1,4 +1,6 @@
 import time
+import random
+from datetime import datetime
 from loguru import logger
 from .config import FEISHU_TABLE_ID
 from .zsxq_auth import login_and_save_state
@@ -55,7 +57,20 @@ def main():
             if text_content:
                 text_content = text_content.strip()
 
-            create_time = topic.get("create_time") # 格式如: 2024-03-30T10:00:00.000+0800
+            create_time_str = topic.get("create_time") # 格式如: 2025-12-17T16:31:22.245+0800
+            # 飞书日期字段需要毫秒级时间戳
+            try:
+                dt = datetime.strptime(create_time_str, "%Y-%m-%dT%H:%M:%S.%f%z")
+                create_time = int(dt.timestamp() * 1000)
+            except Exception:
+                # 兼容旧版或者不同格式，若解析失败则使用当前时间或原值(飞书会报错若格式不对)
+                try:
+                     # 尝试无微秒格式
+                     dt = datetime.strptime(create_time_str.split(".")[0] + "+0800", "%Y-%m-%dT%H:%M:%S%z")
+                     create_time = int(dt.timestamp() * 1000)
+                except:
+                     logger.warning(f"Failed to parse time: {create_time_str}, using current time")
+                     create_time = int(time.time() * 1000)
             
             # 处理图片
             image_paths = []
@@ -120,7 +135,9 @@ def main():
                 logger.error(f"同步主题 {topic_id} 失败。")
                 
             # 限流礼让
-            time.sleep(1)
+            wait_seconds = random.randint(20, 30)
+            logger.info(f"等待 {wait_seconds} 秒后继续...")
+            time.sleep(wait_seconds)
 
 if __name__ == "__main__":
     # 确保当前目录在 sys.path 中，防止脚本直接运行时的相对导入错误

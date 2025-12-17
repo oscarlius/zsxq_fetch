@@ -2936,3 +2936,173 @@ Exception: Feishu Auth Error: invalid param
 2025-12-17 16:53:16.958 | INFO     | __main__:main:10 - 正在启动知识星球爬虫...
 2025-12-17 16:53:16.959 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
 2025-12-17 16:53:17.270 | INFO     | __main__:main:29 - 发现 0 个圈子。
+2025-12-17 16:58:57.890 | INFO     | __main__:main:10 - 正在启动知识星球爬虫...
+2025-12-17 16:58:57.891 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 16:58:58.112 | INFO     | __main__:main:29 - 发现 3 个圈子。
+2025-12-17 16:58:58.112 | INFO     | __main__:main:34 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 16:58:58.197 | INFO     | __main__:main:39 - 从圈子获取到 20 个主题。
+2025-12-17 16:58:58.627 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 16:58:59.646 | INFO     | __main__:main:49 - 发现新主题: 22811824515521521
+2025-12-17 16:59:00.296 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254045, 'msg': 'FieldNameNotFound', 'error': {'message': "Invalid request parameter: 'fields.attachments'. Correct format : field_name not found. Please check and modify accordingly.", 'log_id': '2025121716590210CBD5450BF7316A57FA', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121716590210CBD5450BF7316A57FA&code=1254045&method_id=6965347212289490946'}}
+2025-12-17 16:59:00.297 | ERROR    | __main__:main:120 - 同步主题 22811824515521521 失败。
+2025-12-17 16:59:02.227 | INFO     | __main__:main:49 - 发现新主题: 14588541282241812
+2025-12-17 16:59:02.921 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254045, 'msg': 'FieldNameNotFound', 'error': {'message': "Invalid request parameter: 'fields.attachments'. Correct format : field_name not found. Please check and modify accordingly.", 'log_id': '20251217165905B59E3EF75BF273654739', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217165905B59E3EF75BF273654739&code=1254045&method_id=6965347212289490946'}}
+2025-12-17 16:59:02.922 | ERROR    | __main__:main:120 - 同步主题 14588541282241812 失败。
+2025-12-17 16:59:04.746 | INFO     | __main__:main:49 - 发现新主题: 45811852414452188
+2025-12-17 17:02:25.920 | INFO     | __main__:main:10 - 正在启动知识星球爬虫...
+2025-12-17 17:02:25.921 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 17:02:26.208 | INFO     | __main__:main:29 - 发现 3 个圈子。
+2025-12-17 17:02:26.208 | INFO     | __main__:main:34 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 17:02:26.300 | INFO     | __main__:main:39 - 从圈子获取到 20 个主题。
+2025-12-17 17:02:26.628 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 17:02:27.641 | INFO     | __main__:main:49 - 发现新主题: 22811824515521521
+2025-12-17 17:02:28.296 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254060, 'msg': 'TextFieldConvFail', 'error': {'message': "Invalid request parameter: 'fields.attachments.fieldValue[].fieldName.attachments'. Correct format : the value of 'Multiline' must be a string. Please check and modify accordingly.", 'log_id': '20251217170230F7ED8B6FE9666C626314', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217170230F7ED8B6FE9666C626314&code=1254060&method_id=6965347212289490946'}}
+2025-12-17 17:02:28.297 | ERROR    | __main__:main:120 - 同步主题 22811824515521521 失败。
+2025-12-17 17:02:30.239 | INFO     | __main__:main:49 - 发现新主题: 14588541282241812
+2025-12-17 17:02:31.061 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254064, 'msg': 'DatetimeFieldConvFail', 'error': {'message': "Invalid request parameter: 'fields.create_time.fieldValue.2025-12-17T16:31:22.245+0800.fieldName.create_time'. Correct format : the value of 'Date' must be a unix timestamp. Please check and modify accordingly.", 'log_id': '20251217170233E1A51A9E57DB986909AA', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217170233E1A51A9E57DB986909AA&code=1254064&method_id=6965347212289490946'}}
+2025-12-17 17:02:31.062 | ERROR    | __main__:main:120 - 同步主题 14588541282241812 失败。
+2025-12-17 17:03:50.202 | INFO     | __main__:main:10 - 正在启动知识星球爬虫...
+2025-12-17 17:03:50.203 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 17:03:50.607 | INFO     | __main__:main:29 - 发现 3 个圈子。
+2025-12-17 17:03:50.607 | INFO     | __main__:main:34 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 17:03:50.623 | INFO     | __main__:main:39 - 从圈子获取到 0 个主题。
+2025-12-17 17:03:50.623 | INFO     | __main__:main:34 - 正在处理圈子: 信息平权 (88888558554112)
+2025-12-17 17:03:50.641 | INFO     | __main__:main:39 - 从圈子获取到 0 个主题。
+2025-12-17 17:03:50.641 | INFO     | __main__:main:34 - 正在处理圈子: 180K Research (28888222154481)
+2025-12-17 17:03:50.659 | INFO     | __main__:main:39 - 从圈子获取到 0 个主题。
+2025-12-17 17:04:08.164 | INFO     | __main__:main:11 - 正在启动知识星球爬虫...
+2025-12-17 17:04:08.164 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 17:04:08.555 | INFO     | __main__:main:30 - 发现 3 个圈子。
+2025-12-17 17:04:08.556 | INFO     | __main__:main:35 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 17:04:08.764 | INFO     | __main__:main:40 - 从圈子获取到 20 个主题。
+2025-12-17 17:04:09.041 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 17:04:10.031 | INFO     | __main__:main:50 - 发现新主题: 22811824515521521
+2025-12-17 17:04:10.734 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254060, 'msg': 'TextFieldConvFail', 'error': {'message': "Invalid request parameter: 'fields.attachments.fieldValue[].fieldName.attachments'. Correct format : the value of 'Multiline' must be a string. Please check and modify accordingly.", 'log_id': '2025121717041381221B026BC9D163FF33', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121717041381221B026BC9D163FF33&code=1254060&method_id=6965347212289490946'}}
+2025-12-17 17:04:10.735 | ERROR    | __main__:main:134 - 同步主题 22811824515521521 失败。
+2025-12-17 17:04:12.592 | INFO     | __main__:main:50 - 发现新主题: 14588541282241812
+2025-12-17 17:04:13.301 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254060, 'msg': 'TextFieldConvFail', 'error': {'message': "Invalid request parameter: 'fields.attachments.fieldValue[].fieldName.attachments'. Correct format : the value of 'Multiline' must be a string. Please check and modify accordingly.", 'log_id': '202512171704152DFCC7957BB9BB697ED2', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512171704152DFCC7957BB9BB697ED2&code=1254060&method_id=6965347212289490946'}}
+2025-12-17 17:04:13.302 | ERROR    | __main__:main:134 - 同步主题 14588541282241812 失败。
+2025-12-17 17:06:55.297 | INFO     | __main__:main:12 - 正在启动知识星球爬虫...
+2025-12-17 17:06:55.298 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 17:06:55.540 | INFO     | __main__:main:31 - 发现 3 个圈子。
+2025-12-17 17:06:55.540 | INFO     | __main__:main:36 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 17:06:55.558 | INFO     | __main__:main:41 - 从圈子获取到 0 个主题。
+2025-12-17 17:06:55.558 | INFO     | __main__:main:36 - 正在处理圈子: 信息平权 (88888558554112)
+2025-12-17 17:06:55.577 | INFO     | __main__:main:41 - 从圈子获取到 0 个主题。
+2025-12-17 17:06:55.577 | INFO     | __main__:main:36 - 正在处理圈子: 180K Research (28888222154481)
+2025-12-17 17:06:55.685 | INFO     | __main__:main:41 - 从圈子获取到 20 个主题。
+2025-12-17 17:06:55.978 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 17:06:56.960 | INFO     | __main__:main:51 - 发现新主题: 55188154282252524
+2025-12-17 17:06:57.635 | INFO     | src.zsxq_client:download_file:130 - Downloaded: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\4844252111458458.jpg
+2025-12-17 17:06:58.039 | ERROR    | src.feishu_client:upload_bitable_file:117 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\4844252111458458.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:06:58.499 | INFO     | src.zsxq_client:download_file:130 - Downloaded: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\8855424111528522.jpg
+2025-12-17 17:06:58.910 | ERROR    | src.feishu_client:upload_bitable_file:117 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\8855424111528522.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:06:59.608 | ERROR    | src.feishu_client:add_topic:230 - Failed to add record: {'code': 1254045, 'msg': 'FieldNameNotFound', 'error': {'message': "Invalid request parameter: 'fields.local_files'. Correct format : field_name not found. Please check and modify accordingly.", 'log_id': '20251217170702E19ED944838E576B99CE', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217170702E19ED944838E576B99CE&code=1254045&method_id=6965347212289490946'}}
+2025-12-17 17:06:59.609 | ERROR    | __main__:main:135 - 同步主题 55188154282252524 失败。
+2025-12-17 17:06:59.610 | INFO     | __main__:main:139 - 等待 29 秒后继续...
+2025-12-17 17:10:33.065 | INFO     | __main__:main:12 - 正在启动知识星球爬虫...
+2025-12-17 17:10:33.066 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 17:10:33.300 | INFO     | __main__:main:31 - 发现 3 个圈子。
+2025-12-17 17:10:33.300 | INFO     | __main__:main:36 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 17:10:33.382 | INFO     | __main__:main:41 - 从圈子获取到 20 个主题。
+2025-12-17 17:10:33.911 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 17:10:34.805 | INFO     | __main__:main:51 - 发现新主题: 22811824515521521
+2025-12-17 17:10:36.523 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824515521521
+2025-12-17 17:10:36.524 | SUCCESS  | __main__:main:133 - 主题 22811824515521521 已同步到飞书。
+2025-12-17 17:10:36.527 | INFO     | __main__:main:139 - 等待 23 秒后继续...
+2025-12-17 17:11:00.436 | INFO     | __main__:main:51 - 发现新主题: 14588541282241812
+2025-12-17 17:11:02.101 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 14588541282241812
+2025-12-17 17:11:02.101 | SUCCESS  | __main__:main:133 - 主题 14588541282241812 已同步到飞书。
+2025-12-17 17:11:02.102 | INFO     | __main__:main:139 - 等待 26 秒后继续...
+2025-12-17 17:11:29.013 | INFO     | __main__:main:51 - 发现新主题: 45811852414452188
+2025-12-17 17:11:30.591 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 45811852414452188
+2025-12-17 17:11:30.592 | SUCCESS  | __main__:main:133 - 主题 45811852414452188 已同步到飞书。
+2025-12-17 17:11:30.592 | INFO     | __main__:main:139 - 等待 25 秒后继续...
+2025-12-17 17:11:56.737 | INFO     | __main__:main:51 - 发现新主题: 45811852414452218
+2025-12-17 17:11:58.359 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 45811852414452218
+2025-12-17 17:11:58.360 | SUCCESS  | __main__:main:133 - 主题 45811852414452218 已同步到飞书。
+2025-12-17 17:11:58.360 | INFO     | __main__:main:139 - 等待 20 秒后继续...
+2025-12-17 17:12:19.311 | INFO     | __main__:main:51 - 发现新主题: 22811824515522181
+2025-12-17 17:12:21.217 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824515522181
+2025-12-17 17:12:21.218 | SUCCESS  | __main__:main:133 - 主题 22811824515522181 已同步到飞书。
+2025-12-17 17:12:21.218 | INFO     | __main__:main:139 - 等待 25 秒后继续...
+2025-12-17 17:12:47.454 | INFO     | __main__:main:51 - 发现新主题: 82811824515522842
+2025-12-17 17:12:49.146 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 82811824515522842
+2025-12-17 17:12:49.147 | SUCCESS  | __main__:main:133 - 主题 82811824515522842 已同步到飞书。
+2025-12-17 17:12:49.147 | INFO     | __main__:main:139 - 等待 22 秒后继续...
+2025-12-17 17:13:12.065 | INFO     | __main__:main:51 - 发现新主题: 22811824515528181
+2025-12-17 17:13:13.657 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824515528181
+2025-12-17 17:13:13.658 | SUCCESS  | __main__:main:133 - 主题 22811824515528181 已同步到飞书。
+2025-12-17 17:13:13.658 | INFO     | __main__:main:139 - 等待 27 秒后继续...
+2025-12-17 17:13:41.638 | INFO     | __main__:main:51 - 发现新主题: 22811824515528421
+2025-12-17 17:13:43.279 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824515528421
+2025-12-17 17:13:43.280 | SUCCESS  | __main__:main:133 - 主题 22811824515528421 已同步到飞书。
+2025-12-17 17:13:43.280 | INFO     | __main__:main:139 - 等待 24 秒后继续...
+2025-12-17 17:14:08.219 | INFO     | __main__:main:51 - 发现新主题: 82811824515525422
+2025-12-17 17:14:09.846 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 82811824515525422
+2025-12-17 17:14:09.847 | SUCCESS  | __main__:main:133 - 主题 82811824515525422 已同步到飞书。
+2025-12-17 17:14:09.847 | INFO     | __main__:main:139 - 等待 27 秒后继续...
+2025-12-17 17:14:37.804 | INFO     | __main__:main:51 - 发现新主题: 14588541282242142
+2025-12-17 17:14:39.447 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 14588541282242142
+2025-12-17 17:14:39.448 | SUCCESS  | __main__:main:133 - 主题 14588541282242142 已同步到飞书。
+2025-12-17 17:14:39.448 | INFO     | __main__:main:139 - 等待 20 秒后继续...
+2025-12-17 17:15:00.342 | INFO     | __main__:main:51 - 发现新主题: 82811824542822452
+2025-12-17 17:15:02.189 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 82811824542822452
+2025-12-17 17:15:02.190 | SUCCESS  | __main__:main:133 - 主题 82811824542822452 已同步到飞书。
+2025-12-17 17:15:02.190 | INFO     | __main__:main:139 - 等待 29 秒后继续...
+2025-12-17 17:15:32.953 | INFO     | __main__:main:51 - 发现新主题: 55188154245155154
+2025-12-17 17:15:34.565 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 55188154245155154
+2025-12-17 17:15:34.566 | SUCCESS  | __main__:main:133 - 主题 55188154245155154 已同步到飞书。
+2025-12-17 17:15:34.566 | INFO     | __main__:main:139 - 等待 22 秒后继续...
+2025-12-17 17:15:57.746 | INFO     | __main__:main:51 - 发现新主题: 22811824542822551
+2025-12-17 17:15:59.333 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824542822551
+2025-12-17 17:15:59.334 | SUCCESS  | __main__:main:133 - 主题 22811824542822551 已同步到飞书。
+2025-12-17 17:15:59.334 | INFO     | __main__:main:139 - 等待 25 秒后继续...
+2025-12-17 17:16:25.281 | INFO     | __main__:main:51 - 发现新主题: 22811824542881181
+2025-12-17 17:16:26.888 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824542881181
+2025-12-17 17:16:26.888 | SUCCESS  | __main__:main:133 - 主题 22811824542881181 已同步到飞书。
+2025-12-17 17:16:26.888 | INFO     | __main__:main:139 - 等待 23 秒后继续...
+2025-12-17 17:16:50.792 | INFO     | __main__:main:51 - 发现新主题: 82811824542881442
+2025-12-17 17:16:52.435 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 82811824542881442
+2025-12-17 17:16:52.436 | SUCCESS  | __main__:main:133 - 主题 82811824542881442 已同步到飞书。
+2025-12-17 17:16:52.437 | INFO     | __main__:main:139 - 等待 27 秒后继续...
+2025-12-17 17:17:20.349 | INFO     | __main__:main:51 - 发现新主题: 22811824542881241
+2025-12-17 17:17:21.957 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824542881241
+2025-12-17 17:17:21.958 | SUCCESS  | __main__:main:133 - 主题 22811824542881241 已同步到飞书。
+2025-12-17 17:17:21.958 | INFO     | __main__:main:139 - 等待 23 秒后继续...
+2025-12-17 17:17:45.800 | INFO     | __main__:main:51 - 发现新主题: 82811824524128252
+2025-12-17 17:17:47.356 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 82811824524128252
+2025-12-17 17:17:47.357 | SUCCESS  | __main__:main:133 - 主题 82811824524128252 已同步到飞书。
+2025-12-17 17:17:47.358 | INFO     | __main__:main:139 - 等待 24 秒后继续...
+2025-12-17 17:18:12.474 | INFO     | __main__:main:51 - 发现新主题: 55188154254851154
+2025-12-17 17:18:14.087 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 55188154254851154
+2025-12-17 17:18:14.088 | SUCCESS  | __main__:main:133 - 主题 55188154254851154 已同步到飞书。
+2025-12-17 17:18:14.089 | INFO     | __main__:main:139 - 等待 21 秒后继续...
+2025-12-17 17:18:36.175 | INFO     | __main__:main:51 - 发现新主题: 45811852452158888
+2025-12-17 17:18:38.032 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 45811852452158888
+2025-12-17 17:18:38.033 | SUCCESS  | __main__:main:133 - 主题 45811852452158888 已同步到飞书。
+2025-12-17 17:18:38.034 | INFO     | __main__:main:139 - 等待 21 秒后继续...
+2025-12-17 17:18:59.948 | INFO     | __main__:main:51 - 发现新主题: 55188154254851214
+2025-12-17 17:19:01.848 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 55188154254851214
+2025-12-17 17:19:01.849 | SUCCESS  | __main__:main:133 - 主题 55188154254851214 已同步到飞书。
+2025-12-17 17:19:01.849 | INFO     | __main__:main:139 - 等待 28 秒后继续...
+2025-12-17 17:19:29.850 | INFO     | __main__:main:36 - 正在处理圈子: 信息平权 (88888558554112)
+2025-12-17 17:19:30.068 | INFO     | __main__:main:41 - 从圈子获取到 0 个主题。
+2025-12-17 17:19:30.068 | INFO     | __main__:main:36 - 正在处理圈子: 180K Research (28888222154481)
+2025-12-17 17:19:30.165 | INFO     | __main__:main:41 - 从圈子获取到 20 个主题。
+2025-12-17 17:19:31.389 | INFO     | __main__:main:51 - 发现新主题: 55188154282252524
+2025-12-17 17:19:31.390 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\4844252111458458.jpg
+2025-12-17 17:19:31.711 | ERROR    | src.feishu_client:upload_bitable_file:115 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\4844252111458458.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:19:31.712 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\8855424111528522.jpg
+2025-12-17 17:19:32.151 | ERROR    | src.feishu_client:upload_bitable_file:115 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\55188154282252524\8855424111528522.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:19:33.734 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 55188154282252524
+2025-12-17 17:19:33.735 | SUCCESS  | __main__:main:133 - 主题 55188154282252524 已同步到飞书。
+2025-12-17 17:19:33.735 | INFO     | __main__:main:139 - 等待 28 秒后继续...
+2025-12-17 17:20:02.609 | INFO     | __main__:main:51 - 发现新主题: 22811824545122811
+2025-12-17 17:20:03.815 | INFO     | src.zsxq_client:download_file:130 - Downloaded: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\22811824545122811\8855424112154412.jpg
+2025-12-17 17:20:04.221 | ERROR    | src.feishu_client:upload_bitable_file:115 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\22811824545122811\8855424112154412.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:20:04.605 | INFO     | src.zsxq_client:download_file:130 - Downloaded: E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\22811824545122811\2855424112154411.jpg
+2025-12-17 17:20:05.087 | ERROR    | src.feishu_client:upload_bitable_file:115 - Error uploading file E:\00.工作\04.Python\00.WorkSpace\zsxq_fetch\downloads\28888222154481\22811824545122811\2855424112154411.jpg: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_all
+2025-12-17 17:20:06.727 | INFO     | src.feishu_client:add_topic:231 - Successfully added record for topic_id: 22811824545122811
+2025-12-17 17:20:06.728 | SUCCESS  | __main__:main:133 - 主题 22811824545122811 已同步到飞书。
+2025-12-17 17:20:06.729 | INFO     | __main__:main:139 - 等待 23 秒后继续...
