@@ -1,1 +1,612 @@
 
+2025-12-17 21:25:06.075 | INFO     | __main__:main:38 - 正在启动知识星球爬虫...
+2025-12-17 21:25:06.076 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 21:25:06.351 | INFO     | __main__:main:57 - 发现 3 个圈子。
+2025-12-17 21:25:06.351 | INFO     | __main__:main:62 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 21:25:06.464 | INFO     | __main__:main:67 - 从圈子获取到 20 个主题。
+2025-12-17 21:25:06.892 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 21:25:08.001 | INFO     | __main__:main:77 - 发现新主题: 82811824855845142
+2025-12-17 21:25:08.081 | INFO     | __main__:main:135 - 正在下载文件: 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:25:10.484 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:25:10.485 | INFO     | __main__:main:140 - 正在上传文件: 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:25:22.533 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212521515CB57C9847447BD6D1', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212521515CB57C9847447BD6D1&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:25:22.534 | ERROR    | __main__:main:145 - 文件上传失败: 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:25:22.573 | INFO     | __main__:main:135 - 正在下载文件: 新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:25:25.700 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:25:25.701 | INFO     | __main__:main:140 - 正在上传文件: 新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:25:26.345 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212525A47C7F5891190A8C873B', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212525A47C7F5891190A8C873B&code=99991672&method_id=6944991842538864641'}}
+2025-12-17 21:25:26.347 | ERROR    | __main__:main:145 - 文件上传失败: 新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:25:26.383 | INFO     | __main__:main:135 - 正在下载文件: 以稳筑基，以进谋远！年末关键布局20251216.mp3
+2025-12-17 21:25:34.345 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\以稳筑基，以进谋远！年末关键布局20251216.mp3
+2025-12-17 21:25:34.346 | INFO     | __main__:main:140 - 正在上传文件: 以稳筑基，以进谋远！年末关键布局20251216.mp3
+2025-12-17 21:25:35.672 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '2025121721253450200FCB85F82584DF3F', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121721253450200FCB85F82584DF3F&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:25:35.673 | ERROR    | __main__:main:145 - 文件上传失败: 以稳筑基，以进谋远！年末关键布局20251216.mp3
+2025-12-17 21:25:35.724 | INFO     | __main__:main:135 - 正在下载文件: 展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:25:44.668 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:25:44.669 | INFO     | __main__:main:140 - 正在上传文件: 展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:25:45.292 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212544D65F357893A239839587&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'subject': 'drive:drive', 'type': 'action_scope_required'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212544D65F357893A239839587'}}
+2025-12-17 21:25:45.294 | ERROR    | __main__:main:145 - 文件上传失败: 展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:25:45.329 | INFO     | __main__:main:135 - 正在下载文件: 长城基金投资策略会—A股市场走向何方？20251216.mp3
+2025-12-17 21:26:00.867 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\长城基金投资策略会—A股市场走向何方？20251216.mp3
+2025-12-17 21:26:00.867 | INFO     | __main__:main:140 - 正在上传文件: 长城基金投资策略会—A股市场走向何方？20251216.mp3
+2025-12-17 21:26:00.868 | INFO     | src.feishu_client:upload_bitable_file:121 - File 长城基金投资策略会—A股市场走向何方？20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:26:01.153 | ERROR    | src.feishu_client:_upload_large_file:175 - Large file upload failed: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_prepare
+2025-12-17 21:26:01.155 | ERROR    | __main__:main:145 - 文件上传失败: 长城基金投资策略会—A股市场走向何方？20251216.mp3
+2025-12-17 21:26:01.175 | WARNING  | __main__:main:147 - 无法获取文件 长周期尾端的利率驻底之年——2026年利率债投资策略报告20251216.mp3 的下载链接
+2025-12-17 21:26:01.225 | INFO     | __main__:main:135 - 正在下载文件: 中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:26:03.639 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:26:03.640 | INFO     | __main__:main:140 - 正在上传文件: 中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:26:04.873 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212603558774D43C2EFE8A48A4', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212603558774D43C2EFE8A48A4&code=99991672&method_id=6944991842538864641'}}
+2025-12-17 21:26:04.874 | ERROR    | __main__:main:145 - 文件上传失败: 中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:26:04.945 | INFO     | __main__:main:135 - 正在下载文件: 中央经济工作会的指引20251216.mp3
+2025-12-17 21:26:06.883 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\中央经济工作会的指引20251216.mp3
+2025-12-17 21:26:06.884 | INFO     | __main__:main:140 - 正在上传文件: 中央经济工作会的指引20251216.mp3
+2025-12-17 21:26:07.636 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'log_id': '202512172126061DF6EC071D8081890191', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512172126061DF6EC071D8081890191&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'subject': 'docs:document.media:upload', 'type': 'action_scope_required'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error'}}
+2025-12-17 21:26:07.637 | ERROR    | __main__:main:145 - 文件上传失败: 中央经济工作会的指引20251216.mp3
+2025-12-17 21:26:09.325 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855845142
+2025-12-17 21:26:09.325 | SUCCESS  | __main__:main:167 - 主题 82811824855845142 已同步到飞书。
+2025-12-17 21:26:09.326 | INFO     | __main__:main:173 - 等待 26 秒后继续...
+2025-12-17 21:26:36.301 | INFO     | __main__:main:77 - 发现新主题: 82811824855845512
+2025-12-17 21:26:36.355 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-大宗周期-有色金属行业主题报告20251216.mp3
+2025-12-17 21:26:38.163 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-大宗周期-有色金属行业主题报告20251216.mp3
+2025-12-17 21:26:38.163 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-大宗周期-有色金属行业主题报告20251216.mp3
+2025-12-17 21:26:39.051 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '202512172126381702FF19F4E21984D0D6', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512172126381702FF19F4E21984D0D6&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:26:39.052 | ERROR    | __main__:main:145 - 文件上传失败: 年度策略会-大宗周期-有色金属行业主题报告20251216.mp3
+2025-12-17 21:26:39.106 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:26:42.715 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:26:42.715 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:26:56.417 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '2025121721265363EBA3708921BE88B3C9', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121721265363EBA3708921BE88B3C9&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:26:56.418 | ERROR    | __main__:main:145 - 文件上传失败: 年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:26:56.450 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:26:59.111 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:26:59.112 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:27:10.882 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212710F84D3247D9CB2E8AD87F', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212710F84D3247D9CB2E8AD87F&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:27:10.883 | ERROR    | __main__:main:145 - 文件上传失败: 年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:27:10.940 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:27:13.534 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:27:13.534 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:27:14.299 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'subject': 'bitable:app', 'type': 'action_scope_required'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '2025121721271372221145326064892930', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121721271372221145326064892930&code=99991672&method_id=6944991842538864641'}}
+2025-12-17 21:27:14.302 | ERROR    | __main__:main:145 - 文件上传失败: 年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:27:14.331 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:27:17.723 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:27:17.723 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:27:21.075 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '202512172127171FD0162202F4F786B302', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512172127171FD0162202F4F786B302&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:27:21.076 | ERROR    | __main__:main:145 - 文件上传失败: 年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:27:21.202 | INFO     | __main__:main:135 - 正在下载文件: 人形机器人行业专场——迎接具身智能时代251216.mp3
+2025-12-17 21:27:39.002 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\人形机器人行业专场——迎接具身智能时代251216.mp3
+2025-12-17 21:27:39.002 | INFO     | __main__:main:140 - 正在上传文件: 人形机器人行业专场——迎接具身智能时代251216.mp3
+2025-12-17 21:27:40.371 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '202512172127383B24E7A80110078903C8', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512172127383B24E7A80110078903C8&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:27:40.372 | ERROR    | __main__:main:145 - 文件上传失败: 人形机器人行业专场——迎接具身智能时代251216.mp3
+2025-12-17 21:27:40.429 | INFO     | __main__:main:135 - 正在下载文件: 商业航天行业观点更新20251216.mp3
+2025-12-17 21:27:41.648 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\商业航天行业观点更新20251216.mp3
+2025-12-17 21:27:41.648 | INFO     | __main__:main:140 - 正在上传文件: 商业航天行业观点更新20251216.mp3
+2025-12-17 21:27:42.283 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212741863239235EF5D083E6F6', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212741863239235EF5D083E6F6&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:27:42.284 | ERROR    | __main__:main:145 - 文件上传失败: 商业航天行业观点更新20251216.mp3
+2025-12-17 21:27:42.305 | WARNING  | __main__:main:147 - 无法获取文件 顺周期大涨：为什么？能追吗？买哪些？20251216.mp3 的下载链接
+2025-12-17 21:27:43.977 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855845512
+2025-12-17 21:27:43.979 | SUCCESS  | __main__:main:167 - 主题 82811824855845512 已同步到飞书。
+2025-12-17 21:27:43.979 | INFO     | __main__:main:173 - 等待 28 秒后继续...
+2025-12-17 21:28:13.436 | INFO     | __main__:main:77 - 发现新主题: 22811824855824441
+2025-12-17 21:28:13.469 | INFO     | __main__:main:135 - 正在下载文件: 沪铝与氧化铝的分化会持续吗？20251215.mp3
+2025-12-17 21:28:17.715 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\沪铝与氧化铝的分化会持续吗？20251215.mp3
+2025-12-17 21:28:17.715 | INFO     | __main__:main:140 - 正在上传文件: 沪铝与氧化铝的分化会持续吗？20251215.mp3
+2025-12-17 21:28:19.827 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'subject': 'sheets:spreadsheet', 'type': 'action_scope_required'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '2025121721281755A043451AE57182E69D', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121721281755A043451AE57182E69D&code=99991672&method_id=6944991842538864641'}}
+2025-12-17 21:28:19.828 | ERROR    | __main__:main:145 - 文件上传失败: 沪铝与氧化铝的分化会持续吗？20251215.mp3
+2025-12-17 21:28:19.905 | INFO     | __main__:main:135 - 正在下载文件: 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:28:23.589 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:28:23.589 | INFO     | __main__:main:140 - 正在上传文件: 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:28:25.125 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '2025121721282326061CC2ACC90E897A57', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=2025121721282326061CC2ACC90E897A57&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:28:25.126 | ERROR    | __main__:main:145 - 文件上传失败: 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:28:25.187 | WARNING  | __main__:main:147 - 无法获取文件 近期黄金价格分析及展望20251216.mp3 的下载链接
+2025-12-17 21:28:25.255 | INFO     | __main__:main:135 - 正在下载文件: 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:28:27.976 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:28:27.977 | INFO     | __main__:main:140 - 正在上传文件: 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:28:28.630 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'subject': 'bitable:app', 'type': 'action_scope_required'}, {'subject': 'moments:moments', 'type': 'action_scope_required'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}], 'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212827E0434AABE3F7A981393B', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212827E0434AABE3F7A981393B&code=99991672&method_id=6944991842538864641'}}
+2025-12-17 21:28:28.631 | ERROR    | __main__:main:145 - 文件上传失败: 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:28:28.652 | WARNING  | __main__:main:147 - 无法获取文件 科技创新与能源周期专场-大宗周期-石油石化行业主题报告20251216.mp3 的下载链接
+2025-12-17 21:28:28.701 | INFO     | __main__:main:135 - 正在下载文件: 科技消费崛起，大疆、影石争锋相对20251216.mp3
+2025-12-17 21:28:30.914 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\科技消费崛起，大疆、影石争锋相对20251216.mp3
+2025-12-17 21:28:30.915 | INFO     | __main__:main:140 - 正在上传文件: 科技消费崛起，大疆、影石争锋相对20251216.mp3
+2025-12-17 21:28:34.784 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '202512172128307744382780A39B86479F', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=202512172128307744382780A39B86479F&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'subject': 'docs:document.media:upload', 'type': 'action_scope_required'}]}}
+2025-12-17 21:28:34.787 | ERROR    | __main__:main:145 - 文件上传失败: 科技消费崛起，大疆、影石争锋相对20251216.mp3
+2025-12-17 21:28:34.833 | INFO     | __main__:main:135 - 正在下载文件: 美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:28:37.892 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:28:37.892 | INFO     | __main__:main:140 - 正在上传文件: 美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:28:38.584 | ERROR    | src.feishu_client:upload_bitable_file:107 - Upload failed. Status: 400, Response: {'code': 99991672, 'msg': 'Access denied. One of the following scopes is required: [docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload].应用尚未开通所需的应用身份权限：[docs:doc, drive:drive, sheets:spreadsheet, vc:material, bitable:app, moments:moments, docs:document.media:upload]，点击链接申请并开通任一权限即可：https://open.feishu.cn/app/cli_a4295fa7793f100d/auth?q=docs:doc,drive:drive,sheets:spreadsheet,vc:material,bitable:app,moments:moments,docs:document.media:upload&op_from=openapi&token_type=tenant', 'error': {'message': 'Refer to the documentation to fix the error: https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-fix-the-99991672-error', 'log_id': '20251217212837C7967C1FD66953892E0E', 'troubleshooter': '排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi&log_id=20251217212837C7967C1FD66953892E0E&code=99991672&method_id=6944991842538864641', 'permission_violations': [{'type': 'action_scope_required', 'subject': 'docs:doc'}, {'type': 'action_scope_required', 'subject': 'drive:drive'}, {'type': 'action_scope_required', 'subject': 'sheets:spreadsheet'}, {'type': 'action_scope_required', 'subject': 'vc:material'}, {'type': 'action_scope_required', 'subject': 'bitable:app'}, {'type': 'action_scope_required', 'subject': 'moments:moments'}, {'type': 'action_scope_required', 'subject': 'docs:document.media:upload'}]}}
+2025-12-17 21:28:38.585 | ERROR    | __main__:main:145 - 文件上传失败: 美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:28:38.722 | INFO     | __main__:main:135 - 正在下载文件: 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:28:47.721 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:28:47.722 | INFO     | __main__:main:140 - 正在上传文件: 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:28:47.722 | INFO     | src.feishu_client:upload_bitable_file:121 - File 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:28:47.964 | ERROR    | src.feishu_client:_upload_large_file:175 - Large file upload failed: 400 Client Error: Bad Request for url: https://open.feishu.cn/open-apis/drive/v1/medias/upload_prepare
+2025-12-17 21:28:47.965 | ERROR    | __main__:main:145 - 文件上传失败: 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:28:49.399 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824855824441
+2025-12-17 21:28:49.400 | SUCCESS  | __main__:main:167 - 主题 22811824855824441 已同步到飞书。
+2025-12-17 21:28:49.400 | INFO     | __main__:main:173 - 等待 21 秒后继续...
+2025-12-17 21:29:11.792 | INFO     | __main__:main:77 - 发现新主题: 22811824855824851
+2025-12-17 21:29:11.829 | INFO     | __main__:main:135 - 正在下载文件: 白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:29:16.121 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:29:16.121 | INFO     | __main__:main:140 - 正在上传文件: 白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:29:18.605 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 白糖产业链近期行情回顾与未来展望20251216.mp3 -> QFXtbnO6Do5GuPxinsdcHmk4n0f
+2025-12-17 21:29:18.718 | INFO     | __main__:main:135 - 正在下载文件: 出版子板块行业20251216.mp3
+2025-12-17 21:29:20.215 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\出版子板块行业20251216.mp3
+2025-12-17 21:29:20.215 | INFO     | __main__:main:140 - 正在上传文件: 出版子板块行业20251216.mp3
+2025-12-17 21:29:21.829 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 出版子板块行业20251216.mp3 -> JgLLb8fico9PjnxxmqPcNowBne4
+2025-12-17 21:29:21.881 | INFO     | __main__:main:135 - 正在下载文件: 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:29:23.295 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:29:23.295 | INFO     | __main__:main:140 - 正在上传文件: 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:29:24.971 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3 -> JquBbWXFnoufIPxe7q4cV7Uenfd
+2025-12-17 21:29:25.050 | INFO     | __main__:main:135 - 正在下载文件: 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:29:29.314 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:29:29.314 | INFO     | __main__:main:140 - 正在上传文件: 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:29:31.569 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3 -> KgbZbdEg9ozaZZxeqrKcjYZ5njf
+2025-12-17 21:29:31.638 | INFO     | __main__:main:135 - 正在下载文件: 海洋动力技术公司20251216.mp3
+2025-12-17 21:29:33.417 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\海洋动力技术公司20251216.mp3
+2025-12-17 21:29:33.417 | INFO     | __main__:main:140 - 正在上传文件: 海洋动力技术公司20251216.mp3
+2025-12-17 21:29:36.485 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 海洋动力技术公司20251216.mp3 -> RTWEbbXv3oHE5zxIjdjcInsWn6b
+2025-12-17 21:29:36.538 | INFO     | __main__:main:135 - 正在下载文件: 核聚变专家20251215.mp3
+2025-12-17 21:29:39.925 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\核聚变专家20251215.mp3
+2025-12-17 21:29:39.925 | INFO     | __main__:main:140 - 正在上传文件: 核聚变专家20251215.mp3
+2025-12-17 21:29:46.286 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 核聚变专家20251215.mp3 -> MfURbkQWRohTZRxHmO8coayKnfZ
+2025-12-17 21:29:46.324 | INFO     | __main__:main:135 - 正在下载文件: 红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:29:48.436 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:29:48.436 | INFO     | __main__:main:140 - 正在上传文件: 红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:29:50.967 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 红利资产逆势走强，解密年未投资密码20251216.mp3 -> Wu9kbX6oro3XYexPtdPcs1XAnDb
+2025-12-17 21:29:53.181 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824855824851
+2025-12-17 21:29:53.182 | SUCCESS  | __main__:main:167 - 主题 22811824855824851 已同步到飞书。
+2025-12-17 21:29:53.182 | INFO     | __main__:main:173 - 等待 25 秒后继续...
+2025-12-17 21:30:19.137 | INFO     | __main__:main:77 - 发现新主题: 14588541522544242
+2025-12-17 21:30:19.169 | INFO     | __main__:main:135 - 正在下载文件: “战略扩大内需”落地思路解析20251216.mp3
+2025-12-17 21:30:21.923 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\“战略扩大内需”落地思路解析20251216.mp3
+2025-12-17 21:30:21.923 | INFO     | __main__:main:140 - 正在上传文件: “战略扩大内需”落地思路解析20251216.mp3
+2025-12-17 21:30:23.910 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded “战略扩大内需”落地思路解析20251216.mp3 -> XsnVbaKGGoiWlvxHAqWcKZHnnTf
+2025-12-17 21:30:23.933 | WARNING  | __main__:main:147 - 无法获取文件 【科技行业 - 2026年展望】人工智能超级周期或继续，“十五五”科技国产替代或加速20251216.mp3 的下载链接
+2025-12-17 21:30:23.952 | WARNING  | __main__:main:147 - 无法获取文件 【消费行业 - 2026年展望】新常态下的消费新动能20251216.mp3 的下载链接
+2025-12-17 21:30:23.986 | INFO     | __main__:main:135 - 正在下载文件: 【新能源与公用事业行业 - 2026年展望】行业“反内卷”之下多晶硅初见曙光，大储需求超预期20251216.mp3
+2025-12-17 21:30:27.718 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\【新能源与公用事业行业 - 2026年展望】行业“反内卷”之下多晶硅初见曙光，大储需求超预期20251216.mp3
+2025-12-17 21:30:27.718 | INFO     | __main__:main:140 - 正在上传文件: 【新能源与公用事业行业 - 2026年展望】行业“反内卷”之下多晶硅初见曙光，大储需求超预期20251216.mp3
+2025-12-17 21:30:29.714 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 【新能源与公用事业行业 - 2026年展望】行业“反内卷”之下多晶硅初见曙光，大储需求超预期20251216.mp3 -> Kd3mbA7mpoZ6NyxRVcfcCMipntb
+2025-12-17 21:30:29.764 | INFO     | __main__:main:135 - 正在下载文件: 26年储能年度策略-全球开花，开启两年持续高增新周期20251215.mp3
+2025-12-17 21:30:45.373 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\26年储能年度策略-全球开花，开启两年持续高增新周期20251215.mp3
+2025-12-17 21:30:45.373 | INFO     | __main__:main:140 - 正在上传文件: 26年储能年度策略-全球开花，开启两年持续高增新周期20251215.mp3
+2025-12-17 21:30:45.374 | INFO     | src.feishu_client:upload_bitable_file:121 - File 26年储能年度策略-全球开花，开启两年持续高增新周期20251215.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:31:13.693 | INFO     | __main__:main:135 - 正在下载文件: 2026年年度策略会 -石油石化行业主题报告20251216.mp3
+2025-12-17 21:31:23.799 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\2026年年度策略会 -石油石化行业主题报告20251216.mp3
+2025-12-17 21:31:23.799 | INFO     | __main__:main:140 - 正在上传文件: 2026年年度策略会 -石油石化行业主题报告20251216.mp3
+2025-12-17 21:31:26.870 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2026年年度策略会 -石油石化行业主题报告20251216.mp3 -> WRDqbT2LYoSb73xFDjwc6utkn7g
+2025-12-17 21:31:26.900 | INFO     | __main__:main:135 - 正在下载文件: 2026年年度策略会 -医药行业主题报告20251216.mp3
+2025-12-17 21:31:29.062 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\2026年年度策略会 -医药行业主题报告20251216.mp3
+2025-12-17 21:31:29.062 | INFO     | __main__:main:140 - 正在上传文件: 2026年年度策略会 -医药行业主题报告20251216.mp3
+2025-12-17 21:31:32.888 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2026年年度策略会 -医药行业主题报告20251216.mp3 -> YLO1bBdS5ovNPZxhHyAcWRkNnWe
+2025-12-17 21:31:32.950 | INFO     | __main__:main:135 - 正在下载文件: TMT  布局AI科技正当时（三）20251216.mp3
+2025-12-17 21:31:39.775 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\14588541522544242\TMT  布局AI科技正当时（三）20251216.mp3
+2025-12-17 21:31:39.776 | INFO     | __main__:main:140 - 正在上传文件: TMT  布局AI科技正当时（三）20251216.mp3
+2025-12-17 21:31:39.776 | INFO     | src.feishu_client:upload_bitable_file:121 - File TMT  布局AI科技正当时（三）20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:31:50.802 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541522544242
+2025-12-17 21:31:50.803 | SUCCESS  | __main__:main:167 - 主题 14588541522544242 已同步到飞书。
+2025-12-17 21:31:50.803 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:32:10.559 | INFO     | __main__:main:38 - 正在启动知识星球爬虫...
+2025-12-17 21:32:10.559 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 21:32:10.788 | INFO     | __main__:main:57 - 发现 3 个圈子。
+2025-12-17 21:32:10.788 | INFO     | __main__:main:62 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 21:32:10.888 | INFO     | __main__:main:67 - 从圈子获取到 20 个主题。
+2025-12-17 21:32:11.154 | INFO     | src.feishu_client:_get_token:44 - Successfully refreshed Feishu access token
+2025-12-17 21:32:12.077 | INFO     | __main__:main:77 - 发现新主题: 82811824855845142
+2025-12-17 21:32:12.109 | INFO     | __main__:main:135 - 正在下载文件: 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:32:12.110 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:32:12.110 | INFO     | __main__:main:140 - 正在上传文件: 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3
+2025-12-17 21:32:13.749 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 先瑞达与波士顿科学签署合作协议之说明会20251216.mp3 -> QNylbXNdSoiF1nxR72dcIGwFnag
+2025-12-17 21:32:13.904 | INFO     | __main__:main:135 - 正在下载文件: 新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:32:13.905 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:32:13.905 | INFO     | __main__:main:140 - 正在上传文件: 新经济驱动A股上行，全面布局明年主线20251216.mp3
+2025-12-17 21:32:16.128 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 新经济驱动A股上行，全面布局明年主线20251216.mp3 -> Vww9bY8NIoxJPnxP9APckTObn1e
+2025-12-17 21:32:16.160 | WARNING  | __main__:main:147 - 无法获取文件 以稳筑基，以进谋远！年末关键布局20251216.mp3 的下载链接
+2025-12-17 21:32:16.190 | INFO     | __main__:main:135 - 正在下载文件: 展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:32:16.191 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:32:16.191 | INFO     | __main__:main:140 - 正在上传文件: 展望2026年，大消费行业能否迎来修复行情20251216.mp3
+2025-12-17 21:32:18.230 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 展望2026年，大消费行业能否迎来修复行情20251216.mp3 -> NRWzbCrZNoRpPwx28gKcdYSnnEc
+2025-12-17 21:32:18.255 | WARNING  | __main__:main:147 - 无法获取文件 长城基金投资策略会—A股市场走向何方？20251216.mp3 的下载链接
+2025-12-17 21:32:18.291 | INFO     | __main__:main:135 - 正在下载文件: 长周期尾端的利率驻底之年——2026年利率债投资策略报告20251216.mp3
+2025-12-17 21:32:23.420 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\长周期尾端的利率驻底之年——2026年利率债投资策略报告20251216.mp3
+2025-12-17 21:32:23.420 | INFO     | __main__:main:140 - 正在上传文件: 长周期尾端的利率驻底之年——2026年利率债投资策略报告20251216.mp3
+2025-12-17 21:32:26.809 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 长周期尾端的利率驻底之年——2026年利率债投资策略报告20251216.mp3 -> GUTVbKTpIoFqbLxqWUpcVkD2nkg
+2025-12-17 21:32:26.862 | INFO     | __main__:main:135 - 正在下载文件: 中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:32:26.862 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845142\中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:32:26.862 | INFO     | __main__:main:140 - 正在上传文件: 中国油品行业市场运行特点及发展新趋势20251216.mp3
+2025-12-17 21:32:29.723 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 中国油品行业市场运行特点及发展新趋势20251216.mp3 -> BF3xb9UqCo2GSmxhMiSc0wf9nig
+2025-12-17 21:32:29.790 | WARNING  | __main__:main:147 - 无法获取文件 中央经济工作会的指引20251216.mp3 的下载链接
+2025-12-17 21:32:32.185 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855845142
+2025-12-17 21:32:32.186 | SUCCESS  | __main__:main:167 - 主题 82811824855845142 已同步到飞书。
+2025-12-17 21:32:32.186 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:32:56.164 | INFO     | __main__:main:77 - 发现新主题: 82811824855845512
+2025-12-17 21:32:56.201 | WARNING  | __main__:main:147 - 无法获取文件 年度策略会-大宗周期-有色金属行业主题报告20251216.mp3 的下载链接
+2025-12-17 21:32:56.247 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:32:56.248 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:32:56.248 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-电子行业主题报告20251216.mp3
+2025-12-17 21:32:59.445 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 年度策略会-电子行业主题报告20251216.mp3 -> KQzjb0cOkoPc1lx1yY7c6ugFntb
+2025-12-17 21:32:59.496 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:32:59.496 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:32:59.497 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-计算机行业主题报告20251216.mp3
+2025-12-17 21:33:01.474 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 年度策略会-计算机行业主题报告20251216.mp3 -> JhkYbxYtsoD7zNxlIPkcnEQknXe
+2025-12-17 21:33:01.525 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:33:01.525 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:33:01.525 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-石油石化行业主题报告20251216.mp3
+2025-12-17 21:33:03.452 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 年度策略会-石油石化行业主题报告20251216.mp3 -> DtgsbwEL1oUBpJxGo5Qc7sgXn4d
+2025-12-17 21:33:03.516 | INFO     | __main__:main:135 - 正在下载文件: 年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:33:03.516 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:33:03.516 | INFO     | __main__:main:140 - 正在上传文件: 年度策略会-新能源行业主题报告20251216.mp3
+2025-12-17 21:33:05.607 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 年度策略会-新能源行业主题报告20251216.mp3 -> OJLjbghDiopQMDxRdRQcMPDLnJz
+2025-12-17 21:33:05.660 | WARNING  | __main__:main:147 - 无法获取文件 人形机器人行业专场——迎接具身智能时代251216.mp3 的下载链接
+2025-12-17 21:33:05.718 | INFO     | __main__:main:135 - 正在下载文件: 商业航天行业观点更新20251216.mp3
+2025-12-17 21:33:05.718 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\商业航天行业观点更新20251216.mp3
+2025-12-17 21:33:05.718 | INFO     | __main__:main:140 - 正在上传文件: 商业航天行业观点更新20251216.mp3
+2025-12-17 21:33:06.761 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 商业航天行业观点更新20251216.mp3 -> OUqNb1oe8oimfmxcKyvcNXGjndh
+2025-12-17 21:33:06.809 | INFO     | __main__:main:135 - 正在下载文件: 顺周期大涨：为什么？能追吗？买哪些？20251216.mp3
+2025-12-17 21:33:08.557 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\82811824855845512\顺周期大涨：为什么？能追吗？买哪些？20251216.mp3
+2025-12-17 21:33:08.558 | INFO     | __main__:main:140 - 正在上传文件: 顺周期大涨：为什么？能追吗？买哪些？20251216.mp3
+2025-12-17 21:33:22.303 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 顺周期大涨：为什么？能追吗？买哪些？20251216.mp3 -> VzsdbpaQVoNs0mx9GGXctDGCnpi
+2025-12-17 21:33:24.563 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855845512
+2025-12-17 21:33:24.564 | SUCCESS  | __main__:main:167 - 主题 82811824855845512 已同步到飞书。
+2025-12-17 21:33:24.564 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:33:54.523 | INFO     | __main__:main:77 - 发现新主题: 22811824855824441
+2025-12-17 21:33:54.552 | WARNING  | __main__:main:147 - 无法获取文件 沪铝与氧化铝的分化会持续吗？20251215.mp3 的下载链接
+2025-12-17 21:33:54.605 | INFO     | __main__:main:135 - 正在下载文件: 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:33:54.605 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:33:54.605 | INFO     | __main__:main:140 - 正在上传文件: 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3
+2025-12-17 21:33:56.856 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 家禽-供给收缩，价格中枢上移 - 深耕价值沃野，布局周期新机20251216.mp3 -> RXcmbDxtroUkHwxRSr9cakH6ngg
+2025-12-17 21:33:56.936 | INFO     | __main__:main:135 - 正在下载文件: 近期黄金价格分析及展望20251216.mp3
+2025-12-17 21:33:58.485 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\近期黄金价格分析及展望20251216.mp3
+2025-12-17 21:33:58.485 | INFO     | __main__:main:140 - 正在上传文件: 近期黄金价格分析及展望20251216.mp3
+2025-12-17 21:34:00.139 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 近期黄金价格分析及展望20251216.mp3 -> ZCp7b9VDYoXNyIxMEJocJxcFnFg
+2025-12-17 21:34:00.169 | INFO     | __main__:main:135 - 正在下载文件: 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:34:00.169 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:34:00.170 | INFO     | __main__:main:140 - 正在上传文件: 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3
+2025-12-17 21:34:01.722 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 景嘉微 - 诚恒微AI SoC芯片新品交流会20251216.mp3 -> SuuSb7oEFom9NQxO91pcz9hbnFc
+2025-12-17 21:34:01.768 | INFO     | __main__:main:135 - 正在下载文件: 科技创新与能源周期专场-大宗周期-石油石化行业主题报告20251216.mp3
+2025-12-17 21:34:08.057 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\科技创新与能源周期专场-大宗周期-石油石化行业主题报告20251216.mp3
+2025-12-17 21:34:08.058 | INFO     | __main__:main:140 - 正在上传文件: 科技创新与能源周期专场-大宗周期-石油石化行业主题报告20251216.mp3
+2025-12-17 21:34:12.484 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 科技创新与能源周期专场-大宗周期-石油石化行业主题报告20251216.mp3 -> PPikbYyuooXGFGxGDSUcmmm6nkf
+2025-12-17 21:34:12.514 | WARNING  | __main__:main:147 - 无法获取文件 科技消费崛起，大疆、影石争锋相对20251216.mp3 的下载链接
+2025-12-17 21:34:12.565 | INFO     | __main__:main:135 - 正在下载文件: 美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:34:12.565 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:34:12.566 | INFO     | __main__:main:140 - 正在上传文件: 美联储罕见分歧的背后20251216.mp3
+2025-12-17 21:34:14.476 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 美联储罕见分歧的背后20251216.mp3 -> CcnNbJBsfoNRu7xAgNXcertdnAd
+2025-12-17 21:34:14.507 | INFO     | __main__:main:135 - 正在下载文件: 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:34:14.508 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824441\氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:34:14.508 | INFO     | __main__:main:140 - 正在上传文件: 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3
+2025-12-17 21:34:14.508 | INFO     | src.feishu_client:upload_bitable_file:121 - File 氢能2026年度策略-非电降碳关键载体，蓄势已成 拐点将至20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:34:37.481 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824855824441
+2025-12-17 21:34:37.482 | SUCCESS  | __main__:main:167 - 主题 22811824855824441 已同步到飞书。
+2025-12-17 21:34:37.483 | INFO     | __main__:main:173 - 等待 25 秒后继续...
+2025-12-17 21:35:04.353 | INFO     | __main__:main:77 - 发现新主题: 22811824855824851
+2025-12-17 21:35:04.427 | INFO     | __main__:main:135 - 正在下载文件: 白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:35:04.428 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:35:04.428 | INFO     | __main__:main:140 - 正在上传文件: 白糖产业链近期行情回顾与未来展望20251216.mp3
+2025-12-17 21:35:07.701 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 白糖产业链近期行情回顾与未来展望20251216.mp3 -> Adp2bQG9goSBAoxePafcJOp7nRc
+2025-12-17 21:35:07.756 | INFO     | __main__:main:135 - 正在下载文件: 出版子板块行业20251216.mp3
+2025-12-17 21:35:07.757 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\出版子板块行业20251216.mp3
+2025-12-17 21:35:07.757 | INFO     | __main__:main:140 - 正在上传文件: 出版子板块行业20251216.mp3
+2025-12-17 21:35:09.542 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 出版子板块行业20251216.mp3 -> Fbd2bKHl3oPbnQxLZhKcUGDnnlc
+2025-12-17 21:35:09.572 | INFO     | __main__:main:135 - 正在下载文件: 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:35:09.573 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:35:09.573 | INFO     | __main__:main:140 - 正在上传文件: 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3
+2025-12-17 21:35:12.559 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 短期聚焦美国缺电，继续推荐低位液冷20251215.mp3 -> MAiybhF8YorYDmxWe0CcpSwSnae
+2025-12-17 21:35:12.628 | INFO     | __main__:main:135 - 正在下载文件: 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:35:12.629 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:35:12.629 | INFO     | __main__:main:140 - 正在上传文件: 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3
+2025-12-17 21:35:15.001 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 风电整机专题之二-从成本驱动到价值驱动，看好整机格局持续优化20251216.mp3 -> FZC9b7xFxouKZFx52XpclFHInwg
+2025-12-17 21:35:15.114 | INFO     | __main__:main:135 - 正在下载文件: 海洋动力技术公司20251216.mp3
+2025-12-17 21:35:15.114 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\海洋动力技术公司20251216.mp3
+2025-12-17 21:35:15.114 | INFO     | __main__:main:140 - 正在上传文件: 海洋动力技术公司20251216.mp3
+2025-12-17 21:35:18.865 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 海洋动力技术公司20251216.mp3 -> J7iubjZ93oZk85xUeOecWPb6nZe
+2025-12-17 21:35:19.007 | INFO     | __main__:main:135 - 正在下载文件: 核聚变专家20251215.mp3
+2025-12-17 21:35:19.008 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\核聚变专家20251215.mp3
+2025-12-17 21:35:19.008 | INFO     | __main__:main:140 - 正在上传文件: 核聚变专家20251215.mp3
+2025-12-17 21:35:23.508 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 核聚变专家20251215.mp3 -> SaambcnsKoTcJJxHYuvcBIuNnAf
+2025-12-17 21:35:23.556 | INFO     | __main__:main:135 - 正在下载文件: 红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:35:23.557 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\22811824855824851\红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:35:23.557 | INFO     | __main__:main:140 - 正在上传文件: 红利资产逆势走强，解密年未投资密码20251216.mp3
+2025-12-17 21:35:25.073 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 红利资产逆势走强，解密年未投资密码20251216.mp3 -> JjjgbyArQobcxYx8eRcczK7XnVc
+2025-12-17 21:35:27.530 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824855824851
+2025-12-17 21:35:27.531 | SUCCESS  | __main__:main:167 - 主题 22811824855824851 已同步到飞书。
+2025-12-17 21:35:27.531 | INFO     | __main__:main:173 - 等待 28 秒后继续...
+2025-12-17 21:35:56.641 | INFO     | __main__:main:74 - 主题 14588541522544242 已存在于飞书表中。跳过。
+2025-12-17 21:36:08.716 | INFO     | __main__:main:77 - 发现新主题: 45811852844858828
+2025-12-17 21:36:08.887 | INFO     | __main__:main:135 - 正在下载文件: 奥米尼抗体公司20251216.mp3
+2025-12-17 21:36:21.829 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\奥米尼抗体公司20251216.mp3
+2025-12-17 21:36:21.830 | INFO     | __main__:main:140 - 正在上传文件: 奥米尼抗体公司20251216.mp3
+2025-12-17 21:36:26.255 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 奥米尼抗体公司20251216.mp3 -> Ra6KbuUScoUCZ0x9uaGcdYkIn5c
+2025-12-17 21:36:26.313 | INFO     | __main__:main:135 - 正在下载文件: 澳瑞凯有限公司20251216.mp3
+2025-12-17 21:36:46.659 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\澳瑞凯有限公司20251216.mp3
+2025-12-17 21:36:46.659 | INFO     | __main__:main:140 - 正在上传文件: 澳瑞凯有限公司20251216.mp3
+2025-12-17 21:36:46.660 | INFO     | src.feishu_client:upload_bitable_file:121 - File 澳瑞凯有限公司20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:37:13.776 | INFO     | __main__:main:135 - 正在下载文件: 豪鹏科技20251215.mp3
+2025-12-17 21:37:21.822 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\豪鹏科技20251215.mp3
+2025-12-17 21:37:21.822 | INFO     | __main__:main:140 - 正在上传文件: 豪鹏科技20251215.mp3
+2025-12-17 21:37:26.053 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 豪鹏科技20251215.mp3 -> Q24obxl9TofdPYxM395cDPHBnBg
+2025-12-17 21:37:26.101 | INFO     | __main__:main:135 - 正在下载文件: 华通线缆20251216.mp3
+2025-12-17 21:37:33.474 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\华通线缆20251216.mp3
+2025-12-17 21:37:33.474 | INFO     | __main__:main:140 - 正在上传文件: 华通线缆20251216.mp3
+2025-12-17 21:37:33.475 | INFO     | src.feishu_client:upload_bitable_file:121 - File 华通线缆20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:37:53.294 | INFO     | __main__:main:135 - 正在下载文件: 江天科技20251215.mp3
+2025-12-17 21:37:54.912 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\江天科技20251215.mp3
+2025-12-17 21:37:54.913 | INFO     | __main__:main:140 - 正在上传文件: 江天科技20251215.mp3
+2025-12-17 21:37:57.213 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 江天科技20251215.mp3 -> F0a8bfPO7oxJUHxXVXSc3dJjncd
+2025-12-17 21:37:57.380 | INFO     | __main__:main:135 - 正在下载文件: 心通医疗20251216.mp3
+2025-12-17 21:38:04.455 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\心通医疗20251216.mp3
+2025-12-17 21:38:04.455 | INFO     | __main__:main:140 - 正在上传文件: 心通医疗20251216.mp3
+2025-12-17 21:38:04.455 | INFO     | src.feishu_client:upload_bitable_file:121 - File 心通医疗20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:38:25.021 | INFO     | __main__:main:135 - 正在下载文件: 星辰科技20251216.mp3
+2025-12-17 21:38:33.246 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\星辰科技20251216.mp3
+2025-12-17 21:38:33.247 | INFO     | __main__:main:140 - 正在上传文件: 星辰科技20251216.mp3
+2025-12-17 21:38:33.247 | INFO     | src.feishu_client:upload_bitable_file:121 - File 星辰科技20251216.mp3 > 20MB, using chunked upload (Logic pending full impl).
+2025-12-17 21:38:55.311 | INFO     | __main__:main:135 - 正在下载文件: 兆威机电20251216.mp3
+2025-12-17 21:39:00.316 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\45811852844858828\兆威机电20251216.mp3
+2025-12-17 21:39:00.316 | INFO     | __main__:main:140 - 正在上传文件: 兆威机电20251216.mp3
+2025-12-17 21:39:14.115 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 兆威机电20251216.mp3 -> UVKmbd0yeosRlRxNpH9c9iNWnud
+2025-12-17 21:39:16.383 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844858828
+2025-12-17 21:39:16.385 | SUCCESS  | __main__:main:167 - 主题 45811852844858828 已同步到飞书。
+2025-12-17 21:39:16.385 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:39:46.431 | INFO     | __main__:main:77 - 发现新主题: 82811824855881442
+2025-12-17 21:39:47.947 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855881442
+2025-12-17 21:39:47.948 | SUCCESS  | __main__:main:167 - 主题 82811824855881442 已同步到飞书。
+2025-12-17 21:39:47.948 | INFO     | __main__:main:173 - 等待 24 秒后继续...
+2025-12-17 21:40:12.974 | INFO     | __main__:main:77 - 发现新主题: 45811852844881248
+2025-12-17 21:40:14.505 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844881248
+2025-12-17 21:40:14.506 | SUCCESS  | __main__:main:167 - 主题 45811852844881248 已同步到飞书。
+2025-12-17 21:40:14.506 | INFO     | __main__:main:173 - 等待 21 秒后继续...
+2025-12-17 21:40:36.468 | INFO     | __main__:main:77 - 发现新主题: 14588541522558442
+2025-12-17 21:40:37.969 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541522558442
+2025-12-17 21:40:37.972 | SUCCESS  | __main__:main:167 - 主题 14588541522558442 已同步到飞书。
+2025-12-17 21:40:37.972 | INFO     | __main__:main:173 - 等待 28 秒后继续...
+2025-12-17 21:41:06.872 | INFO     | __main__:main:77 - 发现新主题: 45811852844881858
+2025-12-17 21:41:08.346 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844881858
+2025-12-17 21:41:08.348 | SUCCESS  | __main__:main:167 - 主题 45811852844881858 已同步到飞书。
+2025-12-17 21:41:08.348 | INFO     | __main__:main:173 - 等待 26 秒后继续...
+2025-12-17 21:41:35.337 | INFO     | __main__:main:77 - 发现新主题: 55188154122118124
+2025-12-17 21:41:36.800 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188154122118124
+2025-12-17 21:41:36.801 | SUCCESS  | __main__:main:167 - 主题 55188154122118124 已同步到飞书。
+2025-12-17 21:41:36.801 | INFO     | __main__:main:173 - 等待 26 秒后继续...
+2025-12-17 21:42:03.934 | INFO     | __main__:main:77 - 发现新主题: 82811824855881522
+2025-12-17 21:42:05.443 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855881522
+2025-12-17 21:42:05.444 | SUCCESS  | __main__:main:167 - 主题 82811824855881522 已同步到飞书。
+2025-12-17 21:42:05.444 | INFO     | __main__:main:173 - 等待 26 秒后继续...
+2025-12-17 21:42:32.391 | INFO     | __main__:main:77 - 发现新主题: 14588541522558222
+2025-12-17 21:42:33.856 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541522558222
+2025-12-17 21:42:33.857 | SUCCESS  | __main__:main:167 - 主题 14588541522558222 已同步到飞书。
+2025-12-17 21:42:33.858 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:42:57.729 | INFO     | __main__:main:77 - 发现新主题: 45811852844882158
+2025-12-17 21:42:59.137 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844882158
+2025-12-17 21:42:59.138 | SUCCESS  | __main__:main:167 - 主题 45811852844882158 已同步到飞书。
+2025-12-17 21:42:59.138 | INFO     | __main__:main:173 - 等待 24 秒后继续...
+2025-12-17 21:43:23.973 | INFO     | __main__:main:77 - 发现新主题: 45811852844414258
+2025-12-17 21:43:25.753 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844414258
+2025-12-17 21:43:25.755 | SUCCESS  | __main__:main:167 - 主题 45811852844414258 已同步到飞书。
+2025-12-17 21:43:25.755 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:43:53.802 | INFO     | __main__:main:77 - 发现新主题: 14588541522282122
+2025-12-17 21:43:55.172 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541522282122
+2025-12-17 21:43:55.175 | SUCCESS  | __main__:main:167 - 主题 14588541522282122 已同步到飞书。
+2025-12-17 21:43:55.176 | INFO     | __main__:main:173 - 等待 25 秒后继续...
+2025-12-17 21:44:21.188 | INFO     | __main__:main:77 - 发现新主题: 22811824855515241
+2025-12-17 21:44:28.788 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824855515241
+2025-12-17 21:44:28.790 | SUCCESS  | __main__:main:167 - 主题 22811824855515241 已同步到飞书。
+2025-12-17 21:44:28.790 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:44:52.732 | INFO     | __main__:main:77 - 发现新主题: 82811824855515252
+2025-12-17 21:44:54.208 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811824855515252
+2025-12-17 21:44:54.210 | SUCCESS  | __main__:main:167 - 主题 82811824855515252 已同步到飞书。
+2025-12-17 21:44:54.210 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:45:18.159 | INFO     | __main__:main:77 - 发现新主题: 45811852844414858
+2025-12-17 21:45:19.555 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844414858
+2025-12-17 21:45:19.556 | SUCCESS  | __main__:main:167 - 主题 45811852844414858 已同步到飞书。
+2025-12-17 21:45:19.556 | INFO     | __main__:main:173 - 等待 30 秒后继续...
+2025-12-17 21:45:50.497 | INFO     | __main__:main:77 - 发现新主题: 55188154122282244
+2025-12-17 21:45:51.500 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\48841142151558\55188154122282244\4844251445214848.jpg
+2025-12-17 21:45:51.500 | INFO     | __main__:main:119 - 正在上传图片: 4844251445214848.jpg
+2025-12-17 21:45:52.495 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844251445214848.jpg -> QvtRbgBdBoKQdlxkL4wcUZetn7d
+2025-12-17 21:45:54.307 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188154122282244
+2025-12-17 21:45:54.309 | SUCCESS  | __main__:main:167 - 主题 55188154122282244 已同步到飞书。
+2025-12-17 21:45:54.310 | INFO     | __main__:main:173 - 等待 21 秒后继续...
+2025-12-17 21:46:15.311 | INFO     | __main__:main:62 - 正在处理圈子: 信息平权 (88888558554112)
+2025-12-17 21:46:15.600 | INFO     | __main__:main:67 - 从圈子获取到 0 个主题。
+2025-12-17 21:46:15.601 | INFO     | __main__:main:62 - 正在处理圈子: 180K Research (28888222154481)
+2025-12-17 21:46:15.719 | INFO     | __main__:main:67 - 从圈子获取到 20 个主题。
+2025-12-17 21:46:16.792 | INFO     | __main__:main:77 - 发现新主题: 45811852844422448
+2025-12-17 21:46:16.827 | INFO     | __main__:main:135 - 正在下载文件: YEARAHEAD_20251217_0004.pdf
+2025-12-17 21:46:18.277 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852844422448\YEARAHEAD_20251217_0004.pdf
+2025-12-17 21:46:18.277 | INFO     | __main__:main:140 - 正在上传文件: YEARAHEAD_20251217_0004.pdf
+2025-12-17 21:46:20.059 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded YEARAHEAD_20251217_0004.pdf -> TWLcbydJno1mmtxIvvlcedFqnOg
+2025-12-17 21:46:32.858 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852844422448
+2025-12-17 21:46:32.859 | SUCCESS  | __main__:main:167 - 主题 45811852844422448 已同步到飞书。
+2025-12-17 21:46:32.859 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:47:03.190 | INFO     | __main__:main:77 - 发现新主题: 22811824511841841
+2025-12-17 21:47:03.225 | INFO     | __main__:main:135 - 正在下载文件: Bernstein Semi Cycle Tearsheet Why overcomplicate it.pdf
+2025-12-17 21:47:03.576 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824511841841\Bernstein Semi Cycle Tearsheet Why overcomplicate it.pdf
+2025-12-17 21:47:03.577 | INFO     | __main__:main:140 - 正在上传文件: Bernstein Semi Cycle Tearsheet Why overcomplicate it.pdf
+2025-12-17 21:47:10.356 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded Bernstein Semi Cycle Tearsheet Why overcomplicate it.pdf -> JGfwbr73MoNyvPxH4ePcsgBHnDf
+2025-12-17 21:47:12.002 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824511841841
+2025-12-17 21:47:12.003 | SUCCESS  | __main__:main:167 - 主题 22811824511841841 已同步到飞书。
+2025-12-17 21:47:12.003 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:47:36.043 | INFO     | __main__:main:77 - 发现新主题: 14588541285122442
+2025-12-17 21:47:36.368 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541285122442\8855421558242122.jpg
+2025-12-17 21:47:36.368 | INFO     | __main__:main:119 - 正在上传图片: 8855421558242122.jpg
+2025-12-17 21:47:37.278 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855421558242122.jpg -> GQqGbYNrfoQZR4xhVRQcCEG7nXd
+2025-12-17 21:47:37.476 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541285122442\1522148225482452.jpg
+2025-12-17 21:47:37.476 | INFO     | __main__:main:119 - 正在上传图片: 1522148225482452.jpg
+2025-12-17 21:47:38.291 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522148225482452.jpg -> UCsFbDEAIoxkWRx1rM3cKQ1OnAA
+2025-12-17 21:47:38.603 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541285122442\4844251448258848.jpg
+2025-12-17 21:47:38.604 | INFO     | __main__:main:119 - 正在上传图片: 4844251448258848.jpg
+2025-12-17 21:47:39.485 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844251448258848.jpg -> KNdmbhCbUo5tCkxoH5XcN514nEc
+2025-12-17 21:47:41.263 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541285122442
+2025-12-17 21:47:41.264 | SUCCESS  | __main__:main:167 - 主题 14588541285122442 已同步到飞书。
+2025-12-17 21:47:41.264 | INFO     | __main__:main:173 - 等待 20 秒后继续...
+2025-12-17 21:48:02.730 | INFO     | __main__:main:77 - 发现新主题: 55188154282252524
+2025-12-17 21:48:02.731 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188154282252524\4844252111458458.jpg
+2025-12-17 21:48:02.731 | INFO     | __main__:main:119 - 正在上传图片: 4844252111458458.jpg
+2025-12-17 21:48:03.612 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252111458458.jpg -> SOpBbcmoPoiGVXxe7gmcK7IZnhg
+2025-12-17 21:48:03.613 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188154282252524\8855424111528522.jpg
+2025-12-17 21:48:03.613 | INFO     | __main__:main:119 - 正在上传图片: 8855424111528522.jpg
+2025-12-17 21:48:04.569 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855424111528522.jpg -> GJiLbAaJQoH4k9xrHHGcjhwtnVf
+2025-12-17 21:48:06.289 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188154282252524
+2025-12-17 21:48:06.291 | SUCCESS  | __main__:main:167 - 主题 55188154282252524 已同步到飞书。
+2025-12-17 21:48:06.291 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:48:34.539 | INFO     | __main__:main:77 - 发现新主题: 22811824545122811
+2025-12-17 21:48:34.539 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824545122811\8855424112154412.jpg
+2025-12-17 21:48:34.540 | INFO     | __main__:main:119 - 正在上传图片: 8855424112154412.jpg
+2025-12-17 21:48:35.494 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855424112154412.jpg -> UUj3bNppcogds9xdsVqcJsZCnrf
+2025-12-17 21:48:35.496 | DEBUG    | src.zsxq_client:download_file:119 - File already exists: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824545122811\2855424112154411.jpg
+2025-12-17 21:48:35.496 | INFO     | __main__:main:119 - 正在上传图片: 2855424112154411.jpg
+2025-12-17 21:48:41.594 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424112154411.jpg -> ElJkbO0Rvof2Doxr6DRcy3sinsd
+2025-12-17 21:48:43.352 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824545122811
+2025-12-17 21:48:43.355 | SUCCESS  | __main__:main:167 - 主题 22811824545122811 已同步到飞书。
+2025-12-17 21:48:43.355 | INFO     | __main__:main:173 - 等待 30 秒后继续...
+2025-12-17 21:49:14.322 | INFO     | __main__:main:77 - 发现新主题: 45811852452441448
+2025-12-17 21:49:14.668 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852452441448\4844252115825458.jpg
+2025-12-17 21:49:14.669 | INFO     | __main__:main:119 - 正在上传图片: 4844252115825458.jpg
+2025-12-17 21:49:16.377 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252115825458.jpg -> UrMAbjlZ7oSA8axFrlzcmyYvnte
+2025-12-17 21:49:16.863 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852452441448\8855424112842522.jpg
+2025-12-17 21:49:16.863 | INFO     | __main__:main:119 - 正在上传图片: 8855424112842522.jpg
+2025-12-17 21:49:17.821 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855424112842522.jpg -> GwknbLkYZoPws4xoi4DcgPbZnSb
+2025-12-17 21:49:19.445 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852452441448
+2025-12-17 21:49:19.447 | SUCCESS  | __main__:main:167 - 主题 45811852452441448 已同步到飞书。
+2025-12-17 21:49:19.447 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:49:47.477 | INFO     | __main__:main:77 - 发现新主题: 45811852455524218
+2025-12-17 21:49:47.805 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852455524218\2855424112851811.jpg
+2025-12-17 21:49:47.805 | INFO     | __main__:main:119 - 正在上传图片: 2855424112851811.jpg
+2025-12-17 21:49:48.691 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424112851811.jpg -> UdUfbi9HnoSbytxx2EvcMl4TnDe
+2025-12-17 21:49:49.034 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852455524218\4844252115841548.jpg
+2025-12-17 21:49:49.034 | INFO     | __main__:main:119 - 正在上传图片: 4844252115841548.jpg
+2025-12-17 21:49:49.907 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252115841548.jpg -> YFXybwtqmoEeoSxGOiHcFqUQnVH
+2025-12-17 21:49:51.775 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852455524218
+2025-12-17 21:49:51.776 | SUCCESS  | __main__:main:167 - 主题 45811852455524218 已同步到飞书。
+2025-12-17 21:49:51.777 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:50:21.820 | INFO     | __main__:main:77 - 发现新主题: 45811852458218248
+2025-12-17 21:50:22.152 | INFO     | __main__:main:135 - 正在下载文件: US Semiconductors.pdf
+2025-12-17 21:50:23.151 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852458218248\US Semiconductors.pdf
+2025-12-17 21:50:23.152 | INFO     | __main__:main:140 - 正在上传文件: US Semiconductors.pdf
+2025-12-17 21:50:24.166 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded US Semiconductors.pdf -> N2nobofwIoscn7xgjIecF7pYnhe
+2025-12-17 21:50:25.695 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852458218248
+2025-12-17 21:50:25.697 | SUCCESS  | __main__:main:167 - 主题 45811852458218248 已同步到飞书。
+2025-12-17 21:50:25.698 | INFO     | __main__:main:173 - 等待 21 秒后继续...
+2025-12-17 21:50:48.093 | INFO     | __main__:main:77 - 发现新主题: 55188154251521554
+2025-12-17 21:50:48.386 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188154251521554\1522141882222582.jpg
+2025-12-17 21:50:48.387 | INFO     | __main__:main:119 - 正在上传图片: 1522141882222582.jpg
+2025-12-17 21:50:49.227 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141882222582.jpg -> RdRjbA9QWo8J1qxAaObcYjvwnme
+2025-12-17 21:50:50.948 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188154251521554
+2025-12-17 21:50:50.950 | SUCCESS  | __main__:main:167 - 主题 55188154251521554 已同步到飞书。
+2025-12-17 21:50:50.950 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:51:18.887 | INFO     | __main__:main:77 - 发现新主题: 14588541258518582
+2025-12-17 21:51:19.168 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541258518582\1522141818111582.jpg
+2025-12-17 21:51:19.168 | INFO     | __main__:main:119 - 正在上传图片: 1522141818111582.jpg
+2025-12-17 21:51:20.120 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141818111582.jpg -> I1zebNIczolhjmxXATCcWweSnmN
+2025-12-17 21:51:21.816 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541258518582
+2025-12-17 21:51:21.818 | SUCCESS  | __main__:main:167 - 主题 14588541258518582 已同步到飞书。
+2025-12-17 21:51:21.819 | INFO     | __main__:main:173 - 等待 20 秒后继续...
+2025-12-17 21:51:43.133 | INFO     | __main__:main:77 - 发现新主题: 22811824581584241
+2025-12-17 21:51:43.396 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824581584241\4844252121242158.jpg
+2025-12-17 21:51:43.396 | INFO     | __main__:main:119 - 正在上传图片: 4844252121242158.jpg
+2025-12-17 21:51:44.329 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252121242158.jpg -> T64ubnGjaoFZsDxc6x8coel7nGd
+2025-12-17 21:51:44.642 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824581584241\2855424141454121.jpg
+2025-12-17 21:51:44.642 | INFO     | __main__:main:119 - 正在上传图片: 2855424141454121.jpg
+2025-12-17 21:51:45.576 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424141454121.jpg -> MUiPbbo9Coh05wxOUD5cIqyPnGb
+2025-12-17 21:51:45.831 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824581584241\2855424141454111.jpg
+2025-12-17 21:51:45.831 | INFO     | __main__:main:119 - 正在上传图片: 2855424141454111.jpg
+2025-12-17 21:51:46.785 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424141454111.jpg -> KHYYbDCEyoqRoBxgeGScszlhnsg
+2025-12-17 21:51:48.552 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824581584241
+2025-12-17 21:51:48.555 | SUCCESS  | __main__:main:167 - 主题 22811824581584241 已同步到飞书。
+2025-12-17 21:51:48.556 | INFO     | __main__:main:173 - 等待 25 秒后继续...
+2025-12-17 21:52:14.470 | INFO     | __main__:main:77 - 发现新主题: 22811824582154441
+2025-12-17 21:52:14.704 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824582154441\2855424141581221.jpg
+2025-12-17 21:52:14.705 | INFO     | __main__:main:119 - 正在上传图片: 2855424141581221.jpg
+2025-12-17 21:52:15.552 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424141581221.jpg -> OLMObRg3ooDLvgxTSUCcjU28nsg
+2025-12-17 21:52:15.728 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\22811824582154441\1522141818258412.jpg
+2025-12-17 21:52:15.729 | INFO     | __main__:main:119 - 正在上传图片: 1522141818258412.jpg
+2025-12-17 21:52:16.592 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141818258412.jpg -> Z8UAbLjMRoLlK7xquDpc3Eljnse
+2025-12-17 21:52:18.657 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 22811824582154441
+2025-12-17 21:52:18.658 | SUCCESS  | __main__:main:167 - 主题 22811824582154441 已同步到飞书。
+2025-12-17 21:52:18.658 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:52:48.573 | INFO     | __main__:main:77 - 发现新主题: 55188154228254424
+2025-12-17 21:52:48.778 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188154228254424\2855424144824521.jpg
+2025-12-17 21:52:48.779 | INFO     | __main__:main:119 - 正在上传图片: 2855424144824521.jpg
+2025-12-17 21:52:50.001 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424144824521.jpg -> FOR3bsGZ5o9nLAxn0QXcqQucnTg
+2025-12-17 21:52:50.364 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188154228254424\1522141811541212.jpg
+2025-12-17 21:52:50.364 | INFO     | __main__:main:119 - 正在上传图片: 1522141811541212.jpg
+2025-12-17 21:52:51.265 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141811541212.jpg -> Z4uKbl94PotHamxfjjecu7dEn7C
+2025-12-17 21:52:53.001 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188154228254424
+2025-12-17 21:52:53.002 | SUCCESS  | __main__:main:167 - 主题 55188154228254424 已同步到飞书。
+2025-12-17 21:52:53.002 | INFO     | __main__:main:173 - 等待 25 秒后继续...
+2025-12-17 21:53:18.962 | INFO     | __main__:main:77 - 发现新主题: 14588541221244812
+2025-12-17 21:53:19.416 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541221244812\2855424148882281.jpg
+2025-12-17 21:53:19.417 | INFO     | __main__:main:119 - 正在上传图片: 2855424148882281.jpg
+2025-12-17 21:53:20.278 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 2855424148882281.jpg -> Ks1HbDJW4opzECxz67pcJfYdnkh
+2025-12-17 21:53:20.816 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541221244812\4844252128885558.jpg
+2025-12-17 21:53:20.816 | INFO     | __main__:main:119 - 正在上传图片: 4844252128885558.jpg
+2025-12-17 21:53:21.816 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252128885558.jpg -> Rjj0bm63Oou1eSxddNCcMbx5nib
+2025-12-17 21:53:22.116 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\14588541221244812\8855424148882222.jpg
+2025-12-17 21:53:22.117 | INFO     | __main__:main:119 - 正在上传图片: 8855424148882222.jpg
+2025-12-17 21:53:22.962 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855424148882222.jpg -> HGlAbjVxCo6x1cxkiYOcBj6Gnte
+2025-12-17 21:53:24.709 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 14588541221244812
+2025-12-17 21:53:24.711 | SUCCESS  | __main__:main:167 - 主题 14588541221244812 已同步到飞书。
+2025-12-17 21:53:24.711 | INFO     | __main__:main:173 - 等待 23 秒后继续...
+2025-12-17 21:53:48.732 | INFO     | __main__:main:77 - 发现新主题: 45811852442481248
+2025-12-17 21:53:49.059 | INFO     | __main__:main:135 - 正在下载文件: 1712科技日报1 中英.PDF
+2025-12-17 21:53:50.286 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852442481248\1712科技日报1 中英.PDF
+2025-12-17 21:53:50.286 | INFO     | __main__:main:140 - 正在上传文件: 1712科技日报1 中英.PDF
+2025-12-17 21:53:51.473 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1712科技日报1 中英.PDF -> VVGPb4Y7GouoYqxONhhcIMDcnGf
+2025-12-17 21:53:51.508 | INFO     | __main__:main:135 - 正在下载文件: 1712科技日报1 英.PDF
+2025-12-17 21:53:51.872 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811852442481248\1712科技日报1 英.PDF
+2025-12-17 21:53:51.872 | INFO     | __main__:main:140 - 正在上传文件: 1712科技日报1 英.PDF
+2025-12-17 21:54:04.109 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1712科技日报1 英.PDF -> MYsNbrRbCo4hbwxz3YIcQg7ynQd
+2025-12-17 21:54:05.666 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811852442481248
+2025-12-17 21:54:05.668 | SUCCESS  | __main__:main:167 - 主题 45811852442481248 已同步到飞书。
+2025-12-17 21:54:05.668 | INFO     | __main__:main:173 - 等待 29 秒后继续...
+2025-12-17 21:54:35.645 | INFO     | __main__:main:77 - 发现新主题: 82811822115415242
+2025-12-17 21:54:35.666 | WARNING  | __main__:main:147 - 无法获取文件 1612科技日报2 中英.PDF 的下载链接
+2025-12-17 21:54:35.720 | INFO     | __main__:main:135 - 正在下载文件: 1612科技日报2 英.PDF
+2025-12-17 21:54:36.670 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\82811822115415242\1612科技日报2 英.PDF
+2025-12-17 21:54:36.671 | INFO     | __main__:main:140 - 正在上传文件: 1612科技日报2 英.PDF
+2025-12-17 21:54:39.875 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1612科技日报2 英.PDF -> NNPDb9kJxoJwCPxBeoBcNr2pnZe
+2025-12-17 21:54:41.541 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811822115415242
+2025-12-17 21:54:41.542 | SUCCESS  | __main__:main:167 - 主题 82811822115415242 已同步到飞书。
+2025-12-17 21:54:41.543 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:55:09.808 | INFO     | __main__:main:77 - 发现新主题: 45811855128525518
+2025-12-17 21:55:09.957 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811855128525518\1522141842828152.jpg
+2025-12-17 21:55:09.957 | INFO     | __main__:main:119 - 正在上传图片: 1522141842828152.jpg
+2025-12-17 21:55:11.101 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141842828152.jpg -> RT5obJG8CoV7jsx3EMicUz7YnFh
+2025-12-17 21:55:11.296 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\45811855128525518\8855424125151482.jpg
+2025-12-17 21:55:11.297 | INFO     | __main__:main:119 - 正在上传图片: 8855424125151482.jpg
+2025-12-17 21:55:12.283 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 8855424125151482.jpg -> XZbLbFoN6oNgP2xVM10cGewxnrb
+2025-12-17 21:55:14.031 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 45811855128525518
+2025-12-17 21:55:14.033 | SUCCESS  | __main__:main:167 - 主题 45811855128525518 已同步到飞书。
+2025-12-17 21:55:14.033 | INFO     | __main__:main:173 - 等待 28 秒后继续...
+2025-12-17 21:55:42.992 | INFO     | __main__:main:77 - 发现新主题: 82811822148228882
+2025-12-17 21:55:43.368 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\82811822148228882\1522141842824242.jpg
+2025-12-17 21:55:43.369 | INFO     | __main__:main:119 - 正在上传图片: 1522141842824242.jpg
+2025-12-17 21:55:44.418 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 1522141842824242.jpg -> TxIQbdndhov8VSx3KCIcgT50nge
+2025-12-17 21:55:44.839 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\82811822148228882\4844252154145458.jpg
+2025-12-17 21:55:44.839 | INFO     | __main__:main:119 - 正在上传图片: 4844252154145458.jpg
+2025-12-17 21:55:46.510 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded 4844252154145458.jpg -> KCQ6bObuBogWWlx8DPNc8W4wnXe
+2025-12-17 21:55:50.619 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 82811822148228882
+2025-12-17 21:55:50.621 | SUCCESS  | __main__:main:167 - 主题 82811822148228882 已同步到飞书。
+2025-12-17 21:55:50.621 | INFO     | __main__:main:173 - 等待 21 秒后继续...
+2025-12-17 21:56:23.669 | INFO     | __main__:main:77 - 发现新主题: 55188155841228144
+2025-12-17 21:56:23.710 | INFO     | __main__:main:135 - 正在下载文件: Global Fund Manager Survey.pdf
+2025-12-17 21:56:24.022 | INFO     | src.zsxq_client:download_file:130 - Downloaded: D:\02.开发\2025\xiuqiu_crawl\downloads\28888222154481\55188155841228144\Global Fund Manager Survey.pdf
+2025-12-17 21:56:24.023 | INFO     | __main__:main:140 - 正在上传文件: Global Fund Manager Survey.pdf
+2025-12-17 21:56:25.105 | INFO     | src.feishu_client:upload_bitable_file:112 - Uploaded Global Fund Manager Survey.pdf -> Cuv7b7MSCoo0euxMUXrcLcKqnAe
+2025-12-17 21:56:26.880 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188155841228144
+2025-12-17 21:56:26.881 | SUCCESS  | __main__:main:167 - 主题 55188155841228144 已同步到飞书。
+2025-12-17 21:56:26.881 | INFO     | __main__:main:173 - 等待 27 秒后继续...
+2025-12-17 21:56:54.825 | INFO     | __main__:main:77 - 发现新主题: 55188155842822184
+2025-12-17 21:56:54.850 | WARNING  | __main__:main:147 - 无法获取文件 JPM_Hardware___Networkin_2025-12-15_5155719.pdf 的下载链接
+2025-12-17 21:56:56.417 | INFO     | src.feishu_client:add_topic:232 - Successfully added record for topic_id: 55188155842822184
+2025-12-17 21:56:56.418 | SUCCESS  | __main__:main:167 - 主题 55188155842822184 已同步到飞书。
+2025-12-17 21:56:56.419 | INFO     | __main__:main:173 - 等待 28 秒后继续...
+2025-12-17 22:08:42.086 | INFO     | __main__:main:38 - 正在启动知识星球爬虫...
+2025-12-17 22:08:42.087 | INFO     | src.zsxq_client:_load_auth:62 - ZSXQ Client initialized with session data.
+2025-12-17 22:08:42.337 | INFO     | __main__:main:57 - 发现 3 个圈子。
+2025-12-17 22:08:42.338 | INFO     | __main__:main:62 - 正在处理圈子: 探索者01 (48841142151558)
+2025-12-17 22:08:42.364 | INFO     | __main__:main:67 - 从圈子获取到 0 个主题。
+2025-12-17 22:08:42.365 | INFO     | __main__:main:62 - 正在处理圈子: 信息平权 (88888558554112)
+2025-12-17 22:08:42.389 | INFO     | __main__:main:67 - 从圈子获取到 0 个主题。
+2025-12-17 22:08:42.389 | INFO     | __main__:main:62 - 正在处理圈子: 180K Research (28888222154481)
+2025-12-17 22:08:42.408 | INFO     | __main__:main:67 - 从圈子获取到 0 个主题。

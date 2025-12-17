@@ -8,6 +8,32 @@ from .zsxq_client import ZSXQClient
 from .feishu_client import FeishuClient
 from pathlib import Path
 
+import re
+import urllib.parse
+
+def clean_content(text):
+    if not text:
+        return ""
+    
+    # Pattern to match <e type="hashtag" ... title="..." />
+    pattern = r'<e type="hashtag"[^>]*?title="([^"]+)"[^>]*?/>'
+    
+    def replace_tag(match):
+        encoded_title = match.group(1)
+        try:
+            # Decode URL-encoded title
+            decoded_title = urllib.parse.unquote(encoded_title)
+            return decoded_title
+        except Exception:
+            return encoded_title
+
+    try:
+        cleaned_text = re.sub(pattern, replace_tag, text)
+        return cleaned_text
+    except Exception as e:
+        logger.error(f"Error cleaning content: {e}")
+        return text
+
 def main():
     logger.info("正在启动知识星球爬虫...")
     
@@ -56,6 +82,8 @@ def main():
             # 简单清洗，移除多余空白
             if text_content:
                 text_content = text_content.strip()
+                # 处理hashtag
+                text_content = clean_content(text_content)
 
             create_time_str = topic.get("create_time") # 格式如: 2025-12-17T16:31:22.245+0800
             # 飞书日期字段需要毫秒级时间戳
@@ -88,9 +116,15 @@ def main():
                     if local_path:
                         image_paths.append(local_path)
                         # 上传到飞书
+                        logger.info(f"正在上传图片: {fname}")
                         token = feishu.upload_bitable_file(local_path, file_type="image")
                         if token:
                             attachment_tokens.append({"file_token": token})
+                        else:
+                             logger.error(f"图片上传失败: {fname}")
+                    
+                    # Prevent rate limiting
+                    time.sleep(random.uniform(1.5, 3.5))
             
             # 处理文件附件
             file_paths = []
@@ -106,9 +140,15 @@ def main():
                          if p:
                              file_paths.append(p)
                              # 上传到飞书
+                             logger.info(f"正在上传文件: {file_name}")
                              token = feishu.upload_bitable_file(p, file_type="file")
                              if token:
                                  attachment_tokens.append({"file_token": token})
+                             else:
+                                 logger.error(f"文件上传失败: {file_name}")
+                         
+                         # Prevent rate limiting
+                         time.sleep(random.uniform(2, 5))
                      else:
                          logger.warning(f"无法获取文件 {file_name} 的下载链接")
 

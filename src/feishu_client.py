@@ -85,31 +85,32 @@ class FeishuClient:
         if file_size <= 20 * 1024 * 1024:
             url = "https://open.feishu.cn/open-apis/drive/v1/medias/upload_all"
             
-            form_data = {
-                "file_name": file_name,
-                "parent_type": real_parent_type,
-                "parent_node": parent_node,
-                "size": str(file_size),
-                # file 字段需要 (filename, file_object, content_type)
-                "file": (file_name, open(file_path, "rb"), "application/octet-stream") 
-            }
-            
             try:
-                m = MultipartEncoder(form_data)
-                headers["Content-Type"] = m.content_type
-                
-                resp = requests.post(url, headers=headers, data=m, timeout=300)
-                resp.raise_for_status()
-                res_json = resp.json()
-                
-                if res_json.get("code") != 0:
-                    logger.error(f"Upload failed: {res_json}")
-                    return None
+                with open(file_path, "rb") as f:
+                    form_data = {
+                        "file_name": file_name,
+                        "parent_type": real_parent_type,
+                        "parent_node": parent_node,
+                        "size": str(file_size),
+                        # file 字段需要 (filename, file_object, content_type)
+                        "file": (file_name, f, "application/octet-stream") 
+                    }
                     
-                data = res_json.get("data", {})
-                file_token = data.get("file_token")
-                logger.info(f"Uploaded {file_name} -> {file_token}")
-                return file_token
+                    m = MultipartEncoder(form_data)
+                    headers["Content-Type"] = m.content_type
+                    
+                    resp = requests.post(url, headers=headers, data=m, timeout=300)
+                    # Don't raise immediately, check content first
+                    res_json = resp.json()
+                    
+                    if resp.status_code != 200 or res_json.get("code") != 0:
+                        logger.error(f"Upload failed. Status: {resp.status_code}, Response: {res_json}")
+                        return None
+                        
+                    data = res_json.get("data", {})
+                    file_token = data.get("file_token")
+                    logger.info(f"Uploaded {file_name} -> {file_token}")
+                    return file_token
                 
             except Exception as e:
                 logger.error(f"Error uploading file {file_path}: {e}")
