@@ -1,5 +1,8 @@
 import requests
 import time
+import os
+import zlib
+from requests_toolbelt.multipart.encoder import MultipartEncoder
 from loguru import logger
 from .config import FEISHU_APP_ID, FEISHU_APP_SECRET, FEISHU_BITABLE_APP_TOKEN, FEISHU_TABLE_ID
 
@@ -18,6 +21,8 @@ class FeishuClient:
             return self.tenant_access_token
             
         url = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
+        # 显式指定 Header，防止 requests 自动处理出现意外（参考用户代码）
+        # 虽然 requests 默认 json=... 会带 Content-Type，但显式更安全
         headers = {"Content-Type": "application/json; charset=utf-8"}
         data = {
             "app_id": self.app_id,
@@ -43,94 +48,191 @@ class FeishuClient:
             logger.exception("Error getting Feishu token")
             raise
 
-    def _get_headers(self):
+    def get_auth_headers(self):
         return {
-            "Authorization": f"Bearer {self._get_token()}",
-            "Content-Type": "application/json; charset=utf-8"
+            "Authorization": f"Bearer {self._get_token()}"
         }
 
-    def check_exists(self, topic_id: str) -> bool:
-        """Check if a topic_id already exists in the table"""
-        url = f"https://open.feishu.cn/open-apis/bitable/v1/apps/{self.app_token}/tables/{self.table_id}/records/search"
+    def upload_bitable_file(self, file_path: str, file_type: str = "file") -> str:
+        """
+        上传文件到多维表格专用的云空间，返回 file_token。
+        根据用户示例代码重构：使用 MultipartEncoder。
+        :param file_path: 本地文件路径
+        :param file_type: "image" or "file" (虽然API层都是bitable_file/image，这里做区分)
+        :return: file_token
+        """
+        if not os.path.exists(file_path):
+            logger.error(f"File not found: {file_path}")
+            return None
+            
+        file_name = os.path.basename(file_path)
+        file_size = os.path.getsize(file_path)
+        token = self._get_token()
         
-        # Assumption: The table has a field named 'topic_id'
+        # 确定 parent_type
+        # 用户代码中：
+        # upload_file_to_drive -> explorer (Drive)
+        # upload_media_to_drive -> bitable_file (Attachment)
+        # 我们要存到多维表格附件，所以应该用 bitable_file 或者 bitable_image
+        # 对于图片，parent_type="bitable_image"
+        # 对于文件，parent_type="bitable_file"
+        
+        real_parent_type = "bitable_image" if file_type == "image" else "bitable_file"
+        # 父节点对于 bitable 上传，需要是 app_token
+        parent_node = self.app_token 
+        
+        headers = {"Authorization": f"Bearer {token}"}
+
+        # 1) 小文件：直接上传 (<= 20MB)
+        if file_size <= 20 * 1024 * 1024:
+            url = "https://open.feishu.cn/open-apis/drive/v1/medias/upload_all"
+            
+            form_data = {
+                "file_name": file_name,
+                "parent_type": real_parent_type,
+                "parent_node": parent_node,
+                "size": str(file_size),
+                # file 字段需要 (filename, file_object, content_type)
+                "file": (file_name, open(file_path, "rb"), "application/octet-stream") 
+            }
+            
+            try:
+                m = MultipartEncoder(form_data)
+                headers["Content-Type"] = m.content_type
+                
+                resp = requests.post(url, headers=headers, data=m, timeout=300)
+                resp.raise_for_status()
+                res_json = resp.json()
+                
+                if res_json.get("code") != 0:
+                    logger.error(f"Upload failed: {res_json}")
+                    return None
+                    
+                data = res_json.get("data", {})
+                file_token = data.get("file_token")
+                logger.info(f"Uploaded {file_name} -> {file_token}")
+                return file_token
+                
+            except Exception as e:
+                logger.error(f"Error uploading file {file_path}: {e}")
+                return None
+                
+        else:
+            # 2) 大文件：分片上传 (简化版，参考用户逻辑)
+            logger.info(f"File {file_name} > 20MB, using chunked upload (Logic pending full impl).")
+            # 暂时为了稳定性，如果真的遇到超大文件，建议暂不处理或报错，避免逻辑过于复杂。
+            # 或者复用用户代码的逻辑。
+            return self._upload_large_file(file_path, real_parent_type, parent_node, token)
+
+    def _upload_large_file(self, file_path, parent_type, parent_node, token):
+        # 预上传
+        file_name = os.path.basename(file_path)
+        size = os.path.getsize(file_path)
+        headers = {"Authorization": f"Bearer {token}"}
+        
+        prep_url = "https://open.feishu.cn/open-apis/drive/v1/medias/upload_prepare"
+        body = {
+            "file_name": file_name,
+            "parent_type": parent_type,
+            "parent_node": parent_node,
+            "size": size
+        }
+        try:
+            r = requests.post(prep_url, headers={**headers, "Content-Type": "application/json"}, json=body, timeout=10)
+            r.raise_for_status()
+            prep = r.json().get("data", {})
+            upload_id = prep["upload_id"]
+            block_size = prep["block_size"]
+            block_num = prep["block_num"]
+            
+            # 分片上传
+            part_url = "https://open.feishu.cn/open-apis/drive/v1/medias/upload_part"
+            with open(file_path, "rb") as f:
+                for seq in range(block_num):
+                    chunk = f.read(block_size)
+                    checksum = str(zlib.adler32(chunk) & 0xFFFFFFFF)
+                    mpart = MultipartEncoder({
+                        "upload_id": upload_id,
+                        "seq": str(seq),
+                        "size": str(len(chunk)),
+                        "checksum": checksum,
+                        "file": (file_name, chunk, "application/octet-stream"),
+                    })
+                    # Content-Type 由 MultipartEncoder 生成
+                    curr_headers = headers.copy()
+                    curr_headers["Content-Type"] = mpart.content_type
+                    
+                    rp = requests.post(part_url, headers=curr_headers, data=mpart, timeout=300)
+                    rp.raise_for_status()
+            
+            # 完成上传
+            finish_url = "https://open.feishu.cn/open-apis/drive/v1/medias/upload_finish"
+            f_body = {"upload_id": upload_id, "block_num": block_num}
+            rf = requests.post(finish_url, headers={**headers, "Content-Type": "application/json"}, json=f_body, timeout=10)
+            rf.raise_for_status()
+            return rf.json().get("data", {}).get("file_token")
+            
+        except Exception as e:
+            logger.error(f"Large file upload failed: {e}")
+            return None
+
+    def search_records(self, field_name: str, field_value: str) -> list:
+        url = f"https://open.feishu.cn/open-apis/bitable/v1/apps/{self.app_token}/tables/{self.table_id}/records/search"
         data = {
             "filter": {
                 "conjunction": "and",
                 "conditions": [
                     {
-                        "field_name": "topic_id",
+                        "field_name": field_name,
                         "operator": "is",
-                        "value": [topic_id]
+                        "value": [field_value]
                     }
                 ]
             },
-            "view_id": None
+            "automatic_fields": False 
         }
         
         try:
-            resp = requests.post(url, json=data, headers=self._get_headers())
+            headers = self.get_auth_headers()
+            headers["Content-Type"] = "application/json; charset=utf-8"
+            
+            resp = requests.post(url, json=data, headers=headers)
             resp.raise_for_status()
             res_json = resp.json()
             
             if res_json.get("code") != 0:
-                logger.error(f"Failed to search records: {res_json}")
-                return False
+                logger.error(f"Search failed: {res_json}")
+                return []
                 
-            total = res_json.get("data", {}).get("total", 0)
-            return total > 0
+            return res_json.get("data", {}).get("items", [])
             
         except Exception as e:
-            logger.error(f"Error checking existence for topic_id {topic_id}: {e}")
-            # If error, assume false to avoid missing data, or handle otherwise? 
-            # Better to log and maybe retry. For now return False but log heavy error.
-            return False
+            logger.error(f"Error searching records: {e}")
+            return []
+
+    def check_exists(self, topic_id: str) -> bool:
+        records = self.search_records("topic_id", topic_id)
+        return len(records) > 0
 
     def add_topic(self, fields: dict):
-        """Add a new record to Feishu Bitable"""
         url = f"https://open.feishu.cn/open-apis/bitable/v1/apps/{self.app_token}/tables/{self.table_id}/records"
-        
-        data = {
-            "fields": fields
-        }
+        data = {"fields": fields}
         
         try:
-            # Feishu rate limit handling could be added here
-            resp = requests.post(url, json=data, headers=self._get_headers())
+            headers = self.get_auth_headers()
+            headers["Content-Type"] = "application/json; charset=utf-8"
+            
+            resp = requests.post(url, json=data, headers=headers)
             resp.raise_for_status()
             res_json = resp.json()
             
             if res_json.get("code") != 0:
                 logger.error(f"Failed to add record: {res_json}")
                 return None
-                
+            
             logger.info(f"Successfully added record for topic_id: {fields.get('topic_id', 'unknown')}")
             return res_json.get("data", {}).get("record", {}).get("record_id")
             
         except Exception as e:
             logger.error(f"Error adding topic: {e}")
             return None
-
-    def update_record(self, record_id: str, fields: dict):
-        """Update an existing record"""
-        url = f"https://open.feishu.cn/open-apis/bitable/v1/apps/{self.app_token}/tables/{self.table_id}/records/{record_id}"
-        
-        data = {
-            "fields": fields
-        }
-        
-        try:
-            resp = requests.put(url, json=data, headers=self._get_headers())
-            resp.raise_for_status()
-            res_json = resp.json()
-            
-            if res_json.get("code") != 0:
-                logger.error(f"Failed to update record {record_id}: {res_json}")
-                return False
-                
-            logger.info(f"Successfully updated record {record_id}")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Error updating record {record_id}: {e}")
-            return False

@@ -98,6 +98,17 @@ class ZSXQClient:
             logger.error(f"Failed to fetch topics for group {group_id}: {e}")
             return []
             
+    def get_file_download_url(self, file_id: str):
+        """Fetch the download URL for a specific file"""
+        url = f"https://api.zsxq.com/v2/files/{file_id}/download_url"
+        try:
+            resp = self.session.get(url)
+            resp.raise_for_status()
+            return resp.json().get("resp_data", {}).get("download_url")
+        except Exception as e:
+            logger.error(f"Failed to get download url for file {file_id}: {e}")
+            return None
+            
     def download_file(self, url: str, group_id: str, topic_id: str, filename: str):
         """Download a file (image/attachment)"""
         save_dir = DOWNLOAD_DIR / str(group_id) / str(topic_id)
